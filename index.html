@@ -32,7 +32,7 @@
         <h2 id="name"></h2>
         <div style="margin-top: 2%; font-family: LatoLight;">
           <p id="age"></p>
-          <p>Driver licence</p>
+          <p id="info_description"></p>
         </div>
         <div style="text-align: center; margin-top: 15%; display: flex;">
           <div style="flex: 0.5;">
@@ -57,7 +57,7 @@
             <h4><i class="fa fa-envelope fa-2x"></i></h4>
           </div>
           <div style="flex: 1.5; text-align: left;">
-            <h4><a id="email" style="text-decoration: none !important; color: white !important;"></a></h4>
+            <h4><a id="email" style="text-decoration: none !important; color: white !important; word-break: break-all;"></a></h4>
             <p class="desc" style="color: #ffffff;">School</p>
           </div>
         </div>
@@ -233,22 +233,23 @@
   </div>
 
   <script type="text/javascript">
-    $(document).ready(function() {
+    $( document ).ready( function() {
       $.getJSON( "decombe_sylvain_cv.json" , function( data ) {
         
         //INFO
         $( "#name" ).text( data.info.firstname + " " + data.info.lastname );
         $( "#age" ).text( data.info.age );
-        $( "#address" ).text(data.info.address);
-        $( "#country" ).text(data.info.country);
+        $( "#address" ).text( data.info.address );
+        $( "#country" ).text( data.info.country );
         $( "#email" ).text( data.info.email );
         $( "#email" ).attr( "mailto:" + data.info.email );
         $( "#profil_picture" ).attr( "src", data.info.picture );
+        $( "#info_desciption" ).text( data.info.description );
 
         // EDUCATION
         var education_items = [];
         $.each( data.education, function( key, val ) {
-          education_items.push("<li><div><h4>" + val.title + "</h4><p class=\"date\">" + val.date + "</p><p class=\"desc\">" + val.school + ", " + val.location + "</p></div></li><br/>");
+          education_items.push( "<li><div><h4>" + val.title + "</h4><p class=\"date\">" + val.date + "</p><p class=\"desc\">" + val.school + ", " + val.location + "</p></div></li><br/>" );
         });
         $( "<ul/>", {
           html: education_items.join( "" )
@@ -257,55 +258,56 @@
         //WORK EXPERIENCE
         var workexperience_items = [];
         $.each( data.work_experience, function( key, val ) {
-          workexperience_items.push("<li><div><span class=\"flag\"></span><h4>" + val.job_title + " @" + val.company + ", " + val.location + "</h4><p class=\"date\">" + val.date + ", " + val.type_of_contract + "</p><p class=\"desc\">" + val.description + "</p></div></li><br/>");
+          workexperience_items.push( "<li><div><span class=\"flag\"></span><h4>" + val.job_title + " @" + val.company + ", " + val.location + "</h4><p class=\"date\">" + val.date + ", " + val.type_of_contract + "</p><p class=\"desc\">" + val.description + "</p></div></li><br/>" );
         });
         $( "<ul/>", {
           "class": "timeline",
-          html: workexperience_items.join("")
-        }).appendTo("#workexperience_container");
+          html: workexperience_items.join( "" )
+        }).appendTo( "#workexperience_container" );
       
       });
     })
   </script>
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('.smooth').on('click', function() {
-        var page = $(this).attr('href');
-        switch ($(page)[0].id) {
-                case 'home':
-                  document.getElementById("navigation").style.backgroundColor = "#42a5f5";
+    $( document ).ready( function() {
+      $( ".smooth" ).on( "click" , function() {
+        var page = $( this ).attr( "href" );
+        switch ( $(page)[0].id ) {
+                case "home":
+                  document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
                   break;
-                case 'education':
-                  document.getElementById("navigation").style.backgroundColor = "#fbc02d";
+                case "education":
+                  document.getElementById( "navigation" ).style.backgroundColor = "#fbc02d";
                   break;
-                case 'workexperience':
-                  document.getElementById("navigation").style.backgroundColor = "#f44336";
+                case "workexperience":
+                  document.getElementById( "navigation" ).style.backgroundColor = "#f44336";
                   break;
-                case 'skills':
-                  document.getElementById("navigation").style.backgroundColor = "#4caf50";
+                case "skills":
+                  document.getElementById( "navigation" ).style.backgroundColor = "#4caf50";
                   break;
                 default:
-                  document.getElementById("navigation").style.backgroundColor = "#42a5f5";
+                  document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
                   break;
               }
-        $('html, body').animate({scrollTop: $(page).offset().top -100 }, 'slow');
+        $( "html, body" ).animate( { scrollTop: $( page ).offset().top -100 }, "slow" );
         return false;
       });
     });
   </script>
   <script type="text/javascript">
-    $(window).scroll(function() {
-      if ($(window).scrollTop() < (Math.round($('#education').offset().top) - 105)) {
-        document.getElementById("navigation").style.backgroundColor = "#42a5f5";
+  var offset = 105;
+    $( window ).scroll( function() {
+      if ( $( window ).scrollTop() < ( Math.round( $( "#education" ).offset().top ) - offset )) {
+        document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
       }
-      else if ($(window).scrollTop() > (Math.round($('#education').offset().top) - 105) && $(window).scrollTop() < (Math.round($('#workexperience').offset().top) - 105)) {
-        document.getElementById("navigation").style.backgroundColor = "#fbc02d";
+      else if ( $( window ).scrollTop() > ( Math.round( $( "#education").offset().top ) - offset ) && $( window ).scrollTop() < ( Math.round( $( "#workexperience" ).offset().top ) - offset )) {
+        document.getElementById( "navigation" ).style.backgroundColor = "#fbc02d";
       }
-      else if ($(window).scrollTop() > (Math.round($('#workexperience').offset().top) - 105) && $(window).scrollTop() < (Math.round($('#skills').offset().top) - 105)) {
-        document.getElementById("navigation").style.backgroundColor = "#f44336";
+      else if ( $( window ).scrollTop() > ( Math.round( $( "#workexperience" ).offset().top ) - offset ) && $( window ).scrollTop() < ( Math.round( $( "#skills" ).offset().top ) - offset )) {
+        document.getElementById( "navigation" ).style.backgroundColor = "#f44336";
       }
-      else if ($(window).scrollTop() > (Math.round($('#skills').offset().top) - 105)) {
-        document.getElementById("navigation").style.backgroundColor = "#4caf50";
+      else if ( $( window ).scrollTop() > ( Math.round( $( "#skills" ).offset().top ) - offset )) {
+        document.getElementById( "navigation" ).style.backgroundColor = "#4caf50";
       }
     });
   </script>

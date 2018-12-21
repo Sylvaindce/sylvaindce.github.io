@@ -6,7 +6,8 @@
         "address" : "75015, Paris",
         "country" : "FRANCE",
         "email" : "sylvain.decombe@epitech.eu",
-        "picture" : "images/sylvain_decombe.jpg"
+        "picture" : "images/sylvain_decombe.jpg",
+        "description" : "Driver Licence"
     },
     "education" : [
         {
