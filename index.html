@@ -8,6 +8,8 @@
   <title>Sylvain Decombe</title>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
   <meta name="format-detection" content="telephone=no">
+  <meta name="author" content="Sylvain DECOMBE">
+  <meta name="description" content="Curriculum vitae Sylvain Decombe">
 <!--[if lt IE 9]>
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
@@ -25,11 +27,11 @@
   </header>
   <div class="row">
     <div id="leftview">
-      <img class="profil" src="images/sylvain_decombe.jpg"/>
+      <img id="profil_picture" class="profil"/>
       <div style="text-align:center; padding:5%; color: white;">
-        <h2>Sylvain Decombe</h2>
+        <h2 id="name"></h2>
         <div style="margin-top: 2%; font-family: LatoLight;">
-          <p>25 ans</p>
+          <p id="age"></p>
           <p>Driver licence</p>
         </div>
         <div style="text-align: center; margin-top: 15%; display: flex;">
@@ -37,8 +39,8 @@
             <h4><i class="fa fa-map fa-2x"></i></h4>
           </div>
           <div style="flex: 1.5; text-align: left;">
-            <h4>75015, Paris</h4>
-            <p class="desc" style="color: #ffffff;">France</p>
+            <h4 id="address"></h4>
+            <p id="country" class="desc" style="color: #ffffff;"></p>
           </div>
         </div>
         <!--div style="text-align: center; margin-top: 15%; display: flex;">
@@ -55,7 +57,7 @@
             <h4><i class="fa fa-envelope fa-2x"></i></h4>
           </div>
           <div style="flex: 1.5; text-align: left;">
-            <h4><a style="text-decoration: none !important; color: white !important;" href="mailto: sylvain.decombe@epitech.eu">sylvain.decombe @epitech.eu</a></h4>
+            <h4><a id="email" style="text-decoration: none !important; color: white !important;"></a></h4>
             <p class="desc" style="color: #ffffff;">School</p>
           </div>
         </div>
@@ -89,164 +91,14 @@
         <div class="rightposition"><span id="education"></span></div>
         <h2 style="color: #fbc02d;"><i class="fa fa-graduation-cap fa-lg"></i> + Education</h2>
         <div style="margin: 4%;" id="education_container">
-          <!--<ul>
-          <li>
-              <div>
-                <h4>Master Degree in Software Engineering</h4>
-                <p class="date">SEP 2016 - EXPECTED 2019</p>
-                <p class="desc">Tongji University, Shanghai (China)</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <h4>Epitech Graduate Diploma in Information Technology</h4>
-                <p class="date">SEP 2015 - SEP 2018</p>
-                <p class="desc">Epitech, Paris Graduate School of Digital Innovation (France)</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <h4>A-Level with specialization in Sciences</h4>
-                <p class="date">SEP 2012 - JUL 2013</p>
-                <p class="desc">Lycée Pierre D'ailly, Compiègne (France)</p>
-              </div>
-            </li>
-          </ul>-->
+
         </div>
       </div>
       <div class="container">
         <div class="rightposition3"><span id="workexperience"></span></div>
         <h2 style="color: #f44336;"><i class="fa fa-briefcase fa-lg"></i> + Work Experience</h2>
         <div style="margin: 4%;" id="workexperience_container">
-          <!--ul class="timeline">
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Software Engineer @SkipperNDT, Paris (FRANCE)</h4>
-                <p class="date">SEP 2017 - TODAY - CDI</p>
-                <p class="desc">Software development in Python and C in addition of Hardware prototyping.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Graphic &amp; Web Designer @Bold&amp;Hill, Shanghai (CHINA)</h4>
-                <p class="date">MAR 2017 - SEP 2017 - INTERNSHIP PART TIME</p>
-                <p class="desc">Create visual identity, manage the design of the web site and flyers creation.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Promoter @MVP events, Shanghai (CHINA)</h4>
-                <p class="date">FEB 2017 - SEP 2017 - CDD</p>
-                <p class="desc">Create a WeChat network and promoting the nightclub's many and varied events though social media, as well as face to face promotion.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Project manager @EOBD Scan, Moyvillers (FRANCE)</h4>
-                <p class="date">MAR 2016 - AUG 2016 - INTERNSHIP</p>
-                <p class="desc">Manage a team, define a goals, etablish a schedule, define the visual of the project and participate in software development. 4 project in relation of the automotive world: Two websites (PHP, JS, HTML5, CSS3), Licences manage­ment Tool Client/Server (JSP, JS, TomCat, Cron, Debian, Raspberry Pi), and a Mobile application to made connected car (iOS-Swift &amp; Android-Java).</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Python-Bash Developer / HelpDesk @Gumi, Paris (FRANCE)</h4>
-                <p class="date">SEP 2015 - FEB 2015 - INTERNSHIP PART TIME</p>
-                <p class="desc">Maintenance of the computer park, Creation of an internal docker server to help the deployment of the post production environment and Develo­pement of a docker client (Python/Bash) to facilitate the connexion and the deployment of post production environment.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Deliverer @Deliver.ee, Paris (FRANCE)</h4>
-                <p class="date">MAR 2015 - MAY 2015 - CDD</p>
-                <p class="desc">Deliver breakfast every week-end.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>System Administrator Assistant / HelpDesk @Burson Marsteller, Paris (FRANCE)</h4>
-                <p class="date">JUL 2014 - DEC 2014- INTERNSHIP</p>
-                <p class="desc">Network and server administration, User support, Maintenance of computer park, Creation of a backup server for the internal intranet and Participation in the Studio / Video of the agency.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Graphic Designer @Anarchic, Paris (FRANCE)</h4>
-                <p class="date">OCT 2013 - APR 2014 - CDI</p>
-                <p class="desc">Create visual identity, Film teaser creation for events and Flyers creation.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Consultant Sales @Intersport, Compiègne (FRANCE)</h4>
-                <p class="date">JUL 2013 - AUG 2013 - CDD</p>
-                <p class="desc">Customer reception, customer advice and merchandising.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Stock Manager @Chanel, Le Meux (FRANCE)</h4>
-                <p class="date">JUL 2012 - SEP 2012 - INTERIM</p>
-                <p class="desc">Supply of products and quality control.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Warehouseman @Chanel, Le Meux (FRANCE)</h4>
-                <p class="date">JUL 2011 - AUG 2011 - INTERIM</p>
-                <p class="desc">Quality control.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Consultant Sales @Intersport, Compiègne (FRANCE)</h4>
-                <p class="date">AUG 2010 - SEP 2010 - CDD</p>
-                <p class="desc">Customer reception and customer advice.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>Agricultural Holder @Société Agricole de Francières, Francières (FRANCE)</h4>
-                <p class="date">JUN 2009 - AUG 2009 - CDD</p>
-                <p class="desc">Fields maintenance.</p>
-              </div>
-            </li>
-            <br/>
-            <li>
-              <div>
-                <span class="flag"></span>
-                <h4>IT Technician @Microcom, Compiègne (FRANCE)</h4>
-                <p class="date">DEC 2007 - JAN 2008 - INTERNSHIP</p>
-                <p class="desc">Setting up workstations with computers and necessary peripheral devices, Checking computer hardware (HDD, mouses, keyboards etc.) to ensure functionality, Installing and configuring appropriate software and functions according to specifications.</p>
-              </div>
-            </li>
-          </ul-->
+
         </div>
       </div>
       <div class="container">
@@ -375,16 +227,27 @@
         </div>
       </div>
     </div>
+    <div>
+      <h4 style="text-align: center; margin-bottom: 10px;">Copyright © 2010 Sylvain Decombe. All rights reserved.</h4>
+    </div>
   </div>
 
   <script type="text/javascript">
     $(document).ready(function() {
       $.getJSON( "decombe_sylvain_cv.json" , function( data ) {
-      
+        
+        //INFO
+        $( "#name" ).text( data.info.firstname + " " + data.info.lastname );
+        $( "#age" ).text( data.info.age );
+        $( "#address" ).text(data.info.address);
+        $( "#country" ).text(data.info.country);
+        $( "#email" ).text( data.info.email );
+        $( "#email" ).attr( "mailto:" + data.info.email );
+        $( "#profil_picture" ).attr( "src", data.info.picture );
+
         // EDUCATION
         var education_items = [];
         $.each( data.education, function( key, val ) {
-          console.log( val );
           education_items.push("<li><div><h4>" + val.title + "</h4><p class=\"date\">" + val.date + "</p><p class=\"desc\">" + val.school + ", " + val.location + "</p></div></li><br/>");
         });
         $( "<ul/>", {
