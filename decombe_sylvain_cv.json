@@ -1,0 +1,144 @@
+{
+    "info" : {
+        "firstname" : "Sylvain",
+        "lastname" : "Decombe",
+        "age" : "25",
+        "address" : "75015, Paris (FRANCE)",
+        "email" : "sylvain.decombe@epitech.eu",
+        "picture" : "images/sylvain_decombe.jpg"
+    },
+    "education" : [
+        {
+            "school" : "Tongji University",
+            "location" : "Shanghai (China)",
+            "date" : "SEP 2016 - EXPECTED 2019",
+            "title" : "Master Degree in Software Engineering"
+        },
+        {
+            "school" : "Epitech, Graduate School of Digital Innovation",
+            "location" : "Paris (France)",
+            "date" : "SEP 2015 - SEP 2018",
+            "title" : "Epitech Graduate Diploma in Information Technology"
+        },
+        {
+            "school" : "Lycée Pierre D'ailly",
+            "location" : "Compiègne (France)",
+            "date" : "SEP 2012 - JUL 2013",
+            "title" : "A-Level with specialization in Sciences"
+        }
+    ],
+    "workexperience" : [
+        {
+            "job_title" : "Software Engineer",
+            "company" : "SkipperNDT",
+            "location" : "Paris (FRANCE)",
+            "date" : "SEP 2017 - TODAY",
+            "type_of_contract" : "CDI",
+            "description" : "Software development in Python and C in addition of Hardware prototyping."
+        },
+        {
+            "job_title" : "Graphic &amp; Web Designer",
+            "company" : "Bold&amp;Hill",
+            "location" : "Shanghai (CHINA)",
+            "date" : "MAR 2017 - SEP 2017",
+            "type_of_contract" : "PART TIME INTERNSHIP",
+            "description" : "Create visual identity, manage the design of the web site and flyers creation."
+        },
+        {
+            "job_title" : "Promoter",
+            "company" : "MVP events",
+            "location" : "Shanghai (CHINA)",
+            "date" : "FEB 2017 - SEP 2017",
+            "type_of_contract" : "CDD",
+            "description" : "Create a WeChat network and promoting the nightclub's many and varied events though social media, as well as face to face promotion."
+        },
+        {
+            "job_title" : "Project manager",
+            "company" : "EOBD Scan",
+            "location" : "Moyvillers (FRANCE)",
+            "date" : "MAR 2016 - AUG 2016",
+            "type_of_contract" : "INTERNSHIP",
+            "description" : "Manage a team, define a goals, etablish a schedule, define the visual of the project and participate in software development. 4 project in relation of the automotive world: Two websites (PHP, JS, HTML5, CSS3), Licences manage­ment Tool Client/Server (JSP, JS, TomCat, Cron, Debian, Raspberry Pi), and a Mobile application to made connected car (iOS-Swift &amp; Android-Java)."
+        },
+        {
+            "job_title" : "Python-Bash Developer / HelpDesk",
+            "company" : "Gumi",
+            "location" : "Paris (FRANCE)",
+            "date" : "SEP 2015 - FEB 2015",
+            "type_of_contract" : "PART TIME INTERNSHIP",
+            "description" : "Maintenance of the computer park, Creation of an internal docker server to help the deployment of the post production environment and Develo­pement of a docker client (Python/Bash) to facilitate the connexion and the deployment of post production environment."
+        },
+        {
+            "job_title" : "Deliverer",
+            "company" : "Deliver.ee",
+            "location" : "Paris (FRANCE)",
+            "date" : "MAR 2015 - MAY 2015",
+            "type_of_contract" : "CDD",
+            "description" : "Deliver breakfast every week-end."
+        },
+        {
+            "job_title" : "System Administrator Assistant / HelpDesk",
+            "company" : "Burson Marsteller",
+            "location" : "Paris (FRANCE)",
+            "date" : "JUL 2014 - DEC 2014",
+            "type_of_contract" : "INTERNSHIP",
+            "description" : "Network and server administration, User support, Maintenance of computer park, Creation of a backup server for the internal intranet and Participation in the Studio / Video of the agency."
+        },
+        {
+            "job_title" : "Graphic Designer",
+            "company" : "Anarchic",
+            "location" : "Paris (FRANCE)",
+            "date" : "OCT 2013 - APR 2014",
+            "type_of_contract" : "CDI",
+            "description" : "Create visual identity, Film teaser creation for events and Flyers creation."
+        },
+        {
+            "job_title" : "Consultant Sales",
+            "company" : "Intersport",
+            "location" : "Compiègne (FRANCE)",
+            "date" : "UL 2013 - AUG 2013",
+            "type_of_contract" : "CDD",
+            "description" : "Customer reception, customer advice and merchandising."
+        },
+        {
+            "job_title" : "Stock Manager",
+            "company" : "Chanel",
+            "location" : "Le Meux (FRANCE)",
+            "date" : "JUL 2012 - SEP 2012",
+            "type_of_contract" : "INTERIM",
+            "description" : "Supply of products and quality control."
+        },
+        {
+            "job_title" : "Warehouseman",
+            "company" : "Chanel",
+            "location" : "Le Meux (FRANCE)",
+            "date" : "JUL 2011 - AUG 2011",
+            "type_of_contract" : "INTERIM",
+            "description" : "Quality control."
+        },
+        {
+            "job_title" : "Consultant Sales",
+            "company" : "Intersport",
+            "location" : "Compiègne (FRANCE)",
+            "date" : "AUG 2010 - SEP 2010",
+            "type_of_contract" : "CDD",
+            "description" : "Customer reception and customer advice."
+        },
+        {
+            "job_title" : "Agricultural Operation",
+            "company" : "Société Agricole de Francières",
+            "location" : "Francières (FRANCE)",
+            "date" : "AUG 2010 - SEP 2010",
+            "type_of_contract" : "CDD",
+            "description" : "Fields maintenance."
+        },
+        {
+            "job_title" : "IT Technician",
+            "company" : "Microcom",
+            "location" : "Compiègne (FRANCE)",
+            "date" : "DEC 2007 - JAN 2008",
+            "type_of_contract" : "INTERNSHIP",
+            "description" : "Setting up workstations with computers and necessary peripheral devices, Checking computer hardware (HDD, mouses, keyboards etc.) to ensure functionality, Installing and configuring appropriate software and functions according to specifications."
+        }
+    ]
+}
