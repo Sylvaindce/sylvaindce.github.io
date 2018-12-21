@@ -142,5 +142,49 @@
             "type_of_contract" : "INTERNSHIP",
             "description" : "Setting up workstations with computers and necessary peripheral devices, Checking computer hardware (HDD, mouses, keyboards etc.) to ensure functionality, Installing and configuring appropriate software and functions according to specifications."
         }
-    ]
+    ],
+    "skills" : {
+        "programming language" : {
+            "C" : "75%",
+            "C++" : "80%",
+            "C#/.NET" : "50%",
+            "Java" : "90%",
+            "Python" : "90%",
+            "Shell" : "75%",
+            "Android SDK - Java" : "75%"
+        },
+        "database" : {
+            "SQL" : "75%",
+            "Oracle Database 12c" : "60%"
+        },
+        "web_development" : {
+            "HTML" : "90%",
+            "CSS" : "85%",
+            "PHP" : "75%",
+            "JavaScript* included: AngularJS, ReactJS, Node.JS and JQuery" : "70%",
+            "JSP" : "60%"
+        },
+        "software" : {
+            "Adobe Creative Cloud" : "65%",
+            "Microsoft Office" : "70%",
+            "Docker" : "55%",
+            "Git" : "70%",
+            "Arduino IDE" : "60%"
+        },
+        "operating_system" : [
+            "Microsoft Windows",
+            "Apple MacOS X",
+            "Linux"
+        ],
+        "hardware_prototyping" : [
+            "Arduino",
+            "Raspberry Pi",
+            "Wemos"
+        ],
+        "project_management" : [
+            "Trello",
+            "Scrum",
+            "Agile"
+        ]
+    }
 }

@@ -289,24 +289,24 @@
                   document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
                   break;
               }
-        $( "html, body" ).animate( { scrollTop: $( page ).offset().top -100 }, "slow" );
+        $( "html, body" ).animate( { scrollTop: $( page ).offset().top - 100 }, "slow" );
         return false;
       });
     });
   </script>
   <script type="text/javascript">
-  var offset = 105;
+    var __offset = 105;
     $( window ).scroll( function() {
-      if ( $( window ).scrollTop() < ( Math.round( $( "#education" ).offset().top ) - offset )) {
+      if ( $( window ).scrollTop() < ( Math.round( $( "#education" ).offset().top ) - __offset )) {
         document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
       }
-      else if ( $( window ).scrollTop() > ( Math.round( $( "#education").offset().top ) - offset ) && $( window ).scrollTop() < ( Math.round( $( "#workexperience" ).offset().top ) - offset )) {
+      else if ( $( window ).scrollTop() > ( Math.round( $( "#education").offset().top ) - __offset ) && $( window ).scrollTop() < ( Math.round( $( "#workexperience" ).offset().top ) - __offset )) {
         document.getElementById( "navigation" ).style.backgroundColor = "#fbc02d";
       }
-      else if ( $( window ).scrollTop() > ( Math.round( $( "#workexperience" ).offset().top ) - offset ) && $( window ).scrollTop() < ( Math.round( $( "#skills" ).offset().top ) - offset )) {
+      else if ( $( window ).scrollTop() > ( Math.round( $( "#workexperience" ).offset().top ) - __offset ) && $( window ).scrollTop() < ( Math.round( $( "#skills" ).offset().top ) - __offset )) {
         document.getElementById( "navigation" ).style.backgroundColor = "#f44336";
       }
-      else if ( $( window ).scrollTop() > ( Math.round( $( "#skills" ).offset().top ) - offset )) {
+      else if ( $( window ).scrollTop() > ( Math.round( $( "#skills" ).offset().top ) - __offset )) {
         document.getElementById( "navigation" ).style.backgroundColor = "#4caf50";
       }
     });
