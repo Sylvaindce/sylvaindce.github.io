@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/mystyle.css">
   <title>Sylvain Decombe</title>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
   <meta name="format-detection" content="telephone=no">
   <meta name="author" content="Sylvain DECOMBE">
   <meta name="description" content="Curriculum vitae Sylvain Decombe">
@@ -66,22 +67,20 @@
           <div style="flex: 0.5;">
             <h4><i class="fa fa-language fa-2x"></i></h4>
           </div>
-          <div style="flex: 1.5; text-align: left;">
+          <div style="flex: 1.5; text-align: left;" id="languages_container">
             <h4>Languages:</h4>
             <br/>
-            <h4 style="margin-top: 4%;">French <span class="desc" style="color: #ffffff; font-size: small; margin-left: 10px;">Mother tongue</span></h4>
-            <h4 style="margin-top: 4%;">English <span class="desc" style="color: #ffffff; font-size: small; margin-left: 10px;">Intermediate level</span></h4>
-            <h4 style="margin-top: 4%;">Spanish <span class="desc" style="color: #ffffff; font-size: small; margin-left: 10px;">Conversational</span></h4>
+
           </div>
         </div>
         <div style="text-align: center; margin-top: 15%; display: flex;">
           <div style="flex: 0.5;">
             <h4><i class="fa fa-tags fa-2x"></i></h4>
           </div>
-          <div style="flex: 1.5; text-align: left;">
+          <div style="flex: 1.5; text-align: left;" id="interests_container">
             <h4>Interests:</h4>
             <br/>
-            <h4><i style="margin: 10%" class="fa fa-headphones fa-2x"></i><i style="margin: 10%" class="fa fa-motorcycle fa-2x"></i> <i style="margin: 10%" class="fa fa-paint-brush fa-2x"></i> <i style="margin: 10%" class="fa fa-gamepad fa-2x"></i></h4>
+
           </div>
         </div>
       </div>
@@ -104,212 +103,13 @@
       <div class="container">
         <div class="rightposition"><span id="skills"></span></div>
         <h2 style="color: #4caf50;"><i class="fa fa-check-square-o fa-lg"></i> + Skills</h2>
-        <div style="margin: 4%; display: flex;">
-          <div style="flex: 1; padding: 2%;">
-            <h4>Languages:</h4>
-            <br/>
-            <div style="padding: 2%;">
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: #424242;"><span>C</span></div>
-                <div class="skillbar-bar" style="background: #424242; width: 75%;"></div>
-                <div class="skill-bar-percent">75%</div>
-              </div>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: rgb(40,56,87);"><span>C++</span></div>
-                <div class="skillbar-bar" style="background: rgb(40,56,87); width: 80%;"></div>
-                <div class="skill-bar-percent">80%</div>
-              </div>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: rgb(44,93,176);"><span>C#/.NET</span></div>
-                <div class="skillbar-bar" style="background: rgb(44,93,176); width: 60%;"></div>
-                <div class="skill-bar-percent">60%</div>
-              </div>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: rgb(198, 0, 0);"><span>JAVA</span></div>
-                <div class="skillbar-bar" style="background: rgb(198, 0, 0); width: 90%;"></div>
-                <div class="skill-bar-percent">90%</div>
-              </div>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: rgb(252, 220, 89);"><span>Python</span></div>
-                <div class="skillbar-bar" style="background: rgb(252, 220, 89); width: 80%;"></div>
-                <div class="skill-bar-percent">80%</div>
-              </div>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: rgb(142, 31, 31);"><span>Bash</span></div>
-                <div class="skillbar-bar" style="background: rgb(142, 31, 31); width: 75%;"></div>
-                <div class="skill-bar-percent">75%</div>
-              </div>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: rgb(105, 185, 62);"><span>Android</span></div>
-                <div class="skillbar-bar" style="background: rgb(105, 185, 62); width: 75%;"></div>
-                <div class="skill-bar-percent">75%</div>
-              </div>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: rgb(67, 164, 55);"><span>SQL</span></div>
-                <div class="skillbar-bar" style="background: rgb(67, 164, 55); width: 80%;"></div>
-                <div class="skill-bar-percent">80%</div>
-              </div>
-          </div>
-        </div>
-        <div style="flex: 1; padding: 2%;">
-            <h4>Web Development:</h4>
-            <br/>
-            <div style="padding: 2%;">
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: #88cd2a;"><span>HTML5</span></div>
-                <div class="skillbar-bar" style="background: #88cd2a; width: 90%;"></div>
-                <div class="skill-bar-percent">90%</div>
-              </div>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: #00a8ff;"><span>CSS3</span></div>
-                <div class="skillbar-bar" style="background: #00a8ff; width: 85%;"></div>
-                <div class="skill-bar-percent">85%</div>
-              </div>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: rgb(118,124,180);"><span>PHP</span></div>
-                <div class="skillbar-bar" style="background: rgb(118,124,180); width: 75%;"></div>
-                <div class="skill-bar-percent">75%</div>
-              </div>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: #f44336;"><span>JavaScript</span></div>
-                <div class="skillbar-bar" style="background: #f44336; width: 70%;"></div>
-                <div class="skill-bar-percent">70%</div>
-              </div>
-              <p class="desc" style="margin-top: -15px; margin-left: 5px; margin-bottom: 15px;">* included: AngularJS, ReactJS, Node.JS and JQuery</p>
-              <div class="skillbar clearfix">
-                <div class="skillbar-title" style="background: #ff9800;"><span>JSP</span></div>
-                <div class="skillbar-bar" style="background: #ff9800; width: 60%;"></div>
-                <div class="skill-bar-percent">60%</div>
-              </div>
-            </div>
-          </div>
-      </div>
-      <div style="padding-right: 6%; padding-left: 6%;">
-        <h4>Software:</h4>
-        <div style="padding: 2%;">
-          <div class="skillbar clearfix">
-            <div class="skillbar-title" style="background: rgb(48, 129, 243);"><span>Adobe Creative Cloud</span></div>
-            <div class="skillbar-bar" style="background: rgb(48, 129, 243); width: 65%;"></div>
-            <div class="skill-bar-percent">65%</div>
-          </div>
-          <div class="skillbar clearfix">
-            <div class="skillbar-title" style="background: rgb(206 , 48, 0);"><span>Microsoft Office</span></div>
-            <div class="skillbar-bar" style="background: rgb(206, 48, 0); width: 75%;"></div>
-            <div class="skill-bar-percent">75%</div>
-          </div>
-          <div class="skillbar clearfix">
-            <div class="skillbar-title" style="background: rgb(39, 142, 208);"><span>Docker</span></div>
-            <div class="skillbar-bar" style="background: rgb(39, 142, 208); width: 55%;"></div>
-            <div class="skill-bar-percent">55%</div>
-          </div>
-          <div class="skillbar clearfix">
-            <div class="skillbar-title" style="background: rgb(232, 55, 24);"><span>Git</span></div>
-            <div class="skillbar-bar" style="background: rgb(232, 55, 24); width: 70%;"></div>
-            <div class="skill-bar-percent">70%</div>
-          </div>
-          <div class="skillbar clearfix">
-            <div class="skillbar-title" style="background: rgb(232, 55, 24);"><span>Arduino IDE</span></div>
-            <div class="skillbar-bar" style="background: rgb(232, 55, 24); width: 60%;"></div>
-            <div class="skill-bar-percent">60%</div>
-          </div>
-        </div>
-        <h4>Operating Systems:</h4>
-        <div style="padding: 2%;">
-          <p class="desc" style="color: #42a5f5; font-family: Lato;">Microsoft Windows, Apple MacOS X, Linux</p>
-        </div>
-        <h4>Prototyping Systems:</h4>
-        <div style="padding: 2%;">
-          <p class="desc" style="color: #42a5f5; font-family: Lato;">Arduino, Raspberry</p>
-        </div>
-        <h4>Project Management</h4>
-        <div style="padding: 2%;">
-          <p class="desc" style="color: #42a5f5; font-family: Lato;">Trello, Scrum, Agile</p>
-        </div>
+        <div style="margin: 4%; display: flex; flex-direction: column;" id="skills_container">
+
       </div>
     </div>
     <div>
       <h4 style="text-align: center; margin-bottom: 10px;">Copyright © 2010 Sylvain Decombe. All rights reserved.</h4>
     </div>
   </div>
-
-  <script type="text/javascript">
-    $( document ).ready( function() {
-      $.getJSON( "decombe_sylvain_cv.json" , function( data ) {
-        
-        //INFO
-        $( "#name" ).text( data.info.firstname + " " + data.info.lastname );
-        $( "#age" ).text( data.info.age );
-        $( "#address" ).text( data.info.address );
-        $( "#country" ).text( data.info.country );
-        $( "#email" ).text( data.info.email );
-        $( "#email" ).attr( "mailto:" + data.info.email );
-        $( "#profil_picture" ).attr( "src", data.info.picture );
-        $( "#info_description" ).text( data.info.description );
-
-        // EDUCATION
-        var education_items = [];
-        $.each( data.education, function( key, val ) {
-          education_items.push( "<li><div><h4>" + val.title + "</h4><p class=\"date\">" + val.date + "</p><p class=\"desc\">" + val.school + ", " + val.location + "</p></div></li><br/>" );
-        });
-        $( "<ul/>", {
-          html: education_items.join( "" )
-        }).appendTo( "#education_container" );
-        
-        //WORK EXPERIENCE
-        var workexperience_items = [];
-        $.each( data.work_experience, function( key, val ) {
-          workexperience_items.push( "<li><div><span class=\"flag\"></span><h4>" + val.job_title + " @" + val.company + ", " + val.location + "</h4><p class=\"date\">" + val.date + ", " + val.type_of_contract + "</p><p class=\"desc\">" + val.description + "</p></div></li><br/>" );
-        });
-        $( "<ul/>", {
-          "class": "timeline",
-          html: workexperience_items.join( "" )
-        }).appendTo( "#workexperience_container" );
-      
-      });
-    })
-  </script>
-  <script type="text/javascript">
-    $( document ).ready( function() {
-      $( ".smooth" ).on( "click" , function() {
-        var page = $( this ).attr( "href" );
-        switch ( $(page)[0].id ) {
-                case "home":
-                  document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
-                  break;
-                case "education":
-                  document.getElementById( "navigation" ).style.backgroundColor = "#fbc02d";
-                  break;
-                case "workexperience":
-                  document.getElementById( "navigation" ).style.backgroundColor = "#f44336";
-                  break;
-                case "skills":
-                  document.getElementById( "navigation" ).style.backgroundColor = "#4caf50";
-                  break;
-                default:
-                  document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
-                  break;
-              }
-        $( "html, body" ).animate( { scrollTop: $( page ).offset().top - 100 }, "slow" );
-        return false;
-      });
-    });
-  </script>
-  <script type="text/javascript">
-    var __offset = 105;
-    $( window ).scroll( function() {
-      if ( $( window ).scrollTop() < ( Math.round( $( "#education" ).offset().top ) - __offset )) {
-        document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
-      }
-      else if ( $( window ).scrollTop() > ( Math.round( $( "#education").offset().top ) - __offset ) && $( window ).scrollTop() < ( Math.round( $( "#workexperience" ).offset().top ) - __offset )) {
-        document.getElementById( "navigation" ).style.backgroundColor = "#fbc02d";
-      }
-      else if ( $( window ).scrollTop() > ( Math.round( $( "#workexperience" ).offset().top ) - __offset ) && $( window ).scrollTop() < ( Math.round( $( "#skills" ).offset().top ) - __offset )) {
-        document.getElementById( "navigation" ).style.backgroundColor = "#f44336";
-      }
-      else if ( $( window ).scrollTop() > ( Math.round( $( "#skills" ).offset().top ) - __offset )) {
-        document.getElementById( "navigation" ).style.backgroundColor = "#4caf50";
-      }
-    });
-  </script>
 </body>
 </html>

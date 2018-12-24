@@ -9,6 +9,17 @@
         "picture" : "images/sylvain_decombe.jpg",
         "description" : "Driver Licence"
     },
+    "languages" : {
+      "french" : "Mother tongue",
+      "english" : "Intermediate level",
+      "spanish" : "Conversational"
+    },
+    "interests" : {
+      "music" : "fa-headphones",
+      "motorcycle" : "fa-motorcycle",
+      "design" : "fa-paint-brush",
+      "video-game" : "fa-gamepad"
+    },
     "education" : [
         {
             "school" : "Tongji University",
@@ -144,14 +155,16 @@
         }
     ],
     "skills" : {
-        "programming language" : {
+        "programming_language" : {
             "C" : "75%",
             "C++" : "80%",
             "C#/.NET" : "50%",
             "Java" : "90%",
             "Python" : "90%",
-            "Shell" : "75%",
-            "Android SDK - Java" : "75%"
+            "Bash" : "75%",
+            "Android SDK - Java" : "75%",
+            "ReactJS" : "30%",
+            "Node.JS" : "40%"
         },
         "database" : {
             "SQL" : "75%",
@@ -161,7 +174,7 @@
             "HTML" : "90%",
             "CSS" : "85%",
             "PHP" : "75%",
-            "JavaScript* included: AngularJS, ReactJS, Node.JS and JQuery" : "70%",
+            "JavaScript / JQuery" : "70%",
             "JSP" : "60%"
         },
         "software" : {

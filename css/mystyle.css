@@ -47,17 +47,17 @@ body {
 
 h1 {font-size:2.4em;}
 
-h2 {font-size:1.85em;}  
+h2 {font-size:1.85em;}
 
-h3 {font-size:1.6em;}  
+h3 {font-size:1.6em;}
 
 h4 {
   font-size:1.2em;
   font-weight: 500;
   font-family: LatoBold;
-}  
+}
 
-h5 {font-size:1em;}  
+h5 {font-size:1em;}
 
 h6 {font-size:0.9em;}
 
@@ -198,9 +198,11 @@ nav li.active > nav {
   display: block;
   width: 2vh;
   height: 100%;
-  background: #1e88e5;
+  /*background: #1e88e5;*/
+  background: #e0e0e0;
   border-radius: 100vh;
   z-index: 1;
+  box-shadow: inset 1px 1px 1px #9e9e9e;
   /*box-shadow: 8px 8px 12px #e0e0e0;*/
 }
 
@@ -214,12 +216,14 @@ nav li.active > nav {
     /*left: 100%;*/
     content: ' ';
     display: block;
-    width: 1.4vh;
-    height: 1.4vh;
-    background: #90caf9;
+    width: 0.8vh;
+    height: 0.8vh;
+    /*background: #90caf9;
+    background: #42a5f5;*/
+    background: #ffffff;
     border-radius: 100vh;
     z-index: 2;
-    margin-left: -8.65%;
+    margin-left: -8.3%;
     margin-top: 1vh;
 }
 
