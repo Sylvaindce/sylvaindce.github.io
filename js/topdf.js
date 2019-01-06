@@ -7,6 +7,13 @@ A4
 */
 
 function to_pdf( filename ) {
+    var iOS = !!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform);
+
+    if (iOS) {
+        alert("Info: Can't download PDF with iOS device");
+        return;
+    }
+
     $( "#navigation" ).css( "visibility", "hidden" );
     $( "#gen_pdf" ).css( "visibility", "hidden" );
     $( "#mainview" ).css( "padding-top", "0vh");
