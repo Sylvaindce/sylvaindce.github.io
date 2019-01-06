@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="css/mystyle.css">
   <title>Sylvain Decombe</title>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/html2canvas.min.js"></script>
+  <script type="text/javascript" src="js/jspdf-1.5.3.min.js"></script>
   <script type="text/javascript" src="js/init.js"></script>
+  <script type="text/javascript" src="js/topdf.js"></script>
   <meta name="format-detection" content="telephone=no">
   <meta name="author" content="Sylvain DECOMBE">
   <meta name="description" content="Curriculum vitae Sylvain Decombe">
@@ -19,10 +22,10 @@
   <header>
     <nav id="navigation">
       <ul>
-        <li><a class="smooth" href="#home"><i class="fa fa-user-circle-o fa-2x"></i></a></li>
-        <li><a class="smooth" href="#education"><i class="fa fa-graduation-cap fa-2x"></i></a></li>
-        <li><a class="smooth" href="#workexperience"><i class="fa fa-briefcase fa-2x"></i></a></li>
-        <li><a class="smooth" href="#skills"><i class="fa fa-check-square-o fa-2x"></i></a></li>
+        <li><a class="smooth" href="#home"><i class="fas fa-user-circle fa-2x"></i></a></li>
+        <li><a class="smooth" href="#education"><i class="fas fa-graduation-cap fa-2x"></i></a></li>
+        <li><a class="smooth" href="#workexperience"><i class="fas fa-briefcase fa-2x"></i></a></li>
+        <li><a class="smooth" href="#skills"><i class="fas fa-check-square fa-2x"></i></a></li>
       </ul>
     </nav>
   </header>
@@ -88,21 +91,21 @@
     <div id="mainview">
       <div class="container">
         <div class="rightposition"><span id="education"></span></div>
-        <h2 style="color: #fbc02d;"><i class="fa fa-graduation-cap fa-lg"></i> + Education</h2>
+        <h2 style="color: #fbc02d;"><i class="fas fa-graduation-cap fa-lg"></i> + Education</h2>
         <div style="margin: 4%;" id="education_container">
 
         </div>
       </div>
       <div class="container">
         <div class="rightposition3"><span id="workexperience"></span></div>
-        <h2 style="color: #f44336;"><i class="fa fa-briefcase fa-lg"></i> + Work Experience</h2>
+        <h2 style="color: #f44336;"><i class="fas fa-briefcase fa-lg"></i> + Work Experience</h2>
         <div style="margin: 4%;" id="workexperience_container">
 
         </div>
       </div>
       <div class="container">
         <div class="rightposition"><span id="skills"></span></div>
-        <h2 style="color: #4caf50;"><i class="fa fa-check-square-o fa-lg"></i> + Skills</h2>
+        <h2 style="color: #4caf50;"><i class="fas fa-check-square fa-lg"></i> + Skills</h2>
         <div style="margin: 4%; display: flex; flex-direction: column;" id="skills_container">
 
       </div>
@@ -110,6 +113,9 @@
     <div>
       <h4 style="text-align: center; margin-bottom: 10px;">Copyright © 2010 Sylvain Decombe. All rights reserved.</h4>
     </div>
+    <a title="Download a PDF version" href="#" id="gen_pdf" class="floatting-button">
+      <i title="Download a PDF version" class="fas fa-file-pdf my-floatting-button"></i>
+    </a>
   </div>
 </body>
 </html>

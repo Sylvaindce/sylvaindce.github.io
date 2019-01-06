@@ -1,4 +1,4 @@
-@import url(font-awesome.min.css);
+@import url(all.min.css);
 
 @font-face {
   font-family: LatoLight;
@@ -289,6 +289,23 @@ nav li.active > nav {
   line-height:35px;
   color:#444;
   color:rgba(0, 0, 0, 0.4);
+}
+
+.floatting-button{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color: #42a5f5;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #1E88E5;
+}
+
+.my-floatting-button{
+	margin-top:22px;
 }
 
 a[x-apple-data-detectors] {

@@ -145,6 +145,9 @@ $( document ).ready( function() {
   load_data_from_json();
   update_upper_menu_style_onclick();
   update_upper_menu_style_onscroll();
+  $( "#gen_pdf" ).click(function() {
+    to_pdf("curriculum_vitae_" + $( "#name" ).text().replace(" ", "_").toLowerCase());
+  });
 });
 
 /*
