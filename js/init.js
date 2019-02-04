@@ -67,7 +67,7 @@ function set_language( ) {
 
   if ( !lang ) {
     console.log("add parameter");
-    window.location.search += $.param( { lang : en } );
+    window.location.search += $.param( { lang : "en" } );
     lang = "en";
   }
   switch ( lang.toLowerCase() ) {
