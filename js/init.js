@@ -63,7 +63,7 @@ function update_upper_menu_style_onclick( ) {
 }
 
 function set_language( ) {
-  var lang = $.urlParam( "lang" ).toLowerCase();
+  var lang = $.url_param( "lang" ).toLowerCase();
 
   if ( !lang ) {
     console.log("add parameter");
