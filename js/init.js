@@ -68,6 +68,7 @@ function set_language( ) {
   if ( !lang ) {
     console.log("add parameter");
     window.location.search += $.urlParam( { lang : en } );
+    lang = "en";
   }
   switch ( lang ) {
     case "en":
