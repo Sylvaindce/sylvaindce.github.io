@@ -63,14 +63,14 @@ function update_upper_menu_style_onclick( ) {
 }
 
 function set_language( ) {
-  var lang = $.url_param( "lang" ).toLowerCase();
+  var lang = $.url_param( "lang" );
 
   if ( !lang ) {
     console.log("add parameter");
     window.location.search += $.urlParam( { lang : en } );
     lang = "en";
   }
-  switch ( lang ) {
+  switch ( lang.toLowerCase() ) {
     case "en":
       break;
     case "fr":
