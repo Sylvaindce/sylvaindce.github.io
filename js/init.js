@@ -63,7 +63,12 @@ function update_upper_menu_style_onclick( ) {
 }
 
 function set_language( ) {
-  console.log($.urlParam( "lang" ));
+  lang = $.urlParam( "lang" );
+  console.log( lang );
+  if (lang.length == 0) {
+    console.log("add parameter");
+    window.location.search = window.location.origin + "?lang=en";
+  }
 }
 
 function load_data_from_json( ) {
