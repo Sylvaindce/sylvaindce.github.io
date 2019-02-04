@@ -2,17 +2,17 @@
     "info" : {
         "firstname" : "Sylvain",
         "lastname" : "Decombe",
-        "age" : "25",
+        "age" : "25 ans",
         "address" : "75015, Paris",
         "country" : "FRANCE",
         "email" : "sylvain.decombe@epitech.eu",
         "picture" : "images/sylvain_decombe.jpg",
-        "description" : "Driver Licence"
+        "description" : "Permis de conduire A/B"
     },
     "languages" : {
-      "french" : "Mother tongue",
-      "english" : "Intermediate level",
-      "spanish" : "Conversational"
+      "french" : "Langue maternelle",
+      "english" : "Niveau intermédiaire",
+      "spanish" : "Conversationnel"
     },
     "interests" : {
       "music" : "fa-headphones",
@@ -23,139 +23,139 @@
     "education" : [
         {
             "school" : "Tongji University",
-            "location" : "Shanghai (China)",
-            "date" : "SEP 2016 - EXPECTED 2019",
-            "title" : "Master Degree in Software Engineering"
+            "location" : "Shanghai (Chine)",
+            "date" : "SEP 2016 - ESCOMPT&Eacute; 2019",
+            "title" : "Master en génie logiciel"
         },
         {
             "school" : "Epitech, Graduate School of Digital Innovation",
             "location" : "Paris (France)",
             "date" : "SEP 2015 - SEP 2018",
-            "title" : "Epitech Graduate Diploma in Information Technology"
+            "title" : "Master Epitech, Expert en Technologie de l'information"
         },
         {
             "school" : "Lycée Pierre D'ailly",
             "location" : "Compiègne (France)",
             "date" : "SEP 2012 - JUL 2013",
-            "title" : "A-Level with specialization in Sciences"
+            "title" : "Baccalauréat section Scientifique"
         }
     ],
     "work_experience" : [
         {
-            "job_title" : "Software Engineer",
+            "job_title" : "Ingénieur Logiciel Full Stack",
             "company" : "SkipperNDT",
             "location" : "Paris (FRANCE)",
-            "date" : "SEP 2017 - TODAY",
+            "date" : "SEP 2017 - Aujourd'hui",
             "type_of_contract" : "CDI",
-            "description" : "Software development in Python and C, Hardware prototyping, Creation and maintenance of a Cloud platform (PHP/JS/APACHE/DEBIAN), Wrote a Coding Style rules, Wrote a project that received founding from la région Ile de France, Manage third party provider for special project (specification note ...)"
+            "description" : "Développement logiciel (Python, QT, DJANGO Framework, J2E, SWING, C), Prototypage matériel, Création et maintenance d'une plate-forme Cloud (PHP, JS, APACHE, DEBIAN), Rédaction de règles de style de codage, Rédaction d'un projet ayant reçu un financement par la région Ile de France, Gestion de tiers pour des projets spécifiques (cahier des charges ...)"
         },
         {
-            "job_title" : "Graphic &amp; Web Designer",
+            "job_title" : "Designer graphique et Développeur Web",
             "company" : "Bold&amp;Hill",
-            "location" : "Shanghai (CHINA)",
+            "location" : "Shanghai (CHINE)",
             "date" : "MAR 2017 - SEP 2017",
-            "type_of_contract" : "PART TIME INTERNSHIP",
-            "description" : "Create visual identity, manage the design of the web site and flyers creation."
+            "type_of_contract" : "Stage à temps partiel",
+            "description" : "Création d'une identité visuelle, Gérez la conception du site Web (PHP, WORDPRESS, JS) et Création de dépliants (Adobe CC)."
         },
         {
-            "job_title" : "Promoter",
+            "job_title" : "Promoteur",
             "company" : "MVP events",
-            "location" : "Shanghai (CHINA)",
-            "date" : "FEB 2017 - SEP 2017",
+            "location" : "Shanghai (CHINE)",
+            "date" : "FEV 2017 - SEP 2017",
             "type_of_contract" : "CDD",
-            "description" : "Create a WeChat network and promoting the nightclub's many and varied events though social media, as well as face to face promotion."
+            "description" : "Création d'un réseau sur la platforme WeChat ainsi que d'un robot de réponse automatique (Python, Wechaty SDK), Création d'un site web de lotterie de tickets boissons (HTML, JQUERY), Promotion de nombreux événements via les réseaux sociaux, Fidélisation clientèle."
         },
         {
-            "job_title" : "Project manager",
+            "job_title" : "Chef de Projet - Développeur logiciel Full Stack",
             "company" : "EOBD Scan",
             "location" : "Moyvillers (FRANCE)",
-            "date" : "MAR 2016 - AUG 2016",
-            "type_of_contract" : "INTERNSHIP",
-            "description" : "Manage team, define goals, etablish a schedule, define the visual chart of the projects and participate to the software development. 4 project in relation of the automotive world: Two websites (PHP, JS, HTML5, CSS3), Licences manage­ment Tool Client/Server (JSP, JS, TomCat, Cron, Debian, Raspberry Pi), and a Mobile application for connected car (iOS-Swift &amp; Android-Java, OBD2)."
+            "date" : "MAR 2016 - AOUT 2016",
+            "type_of_contract" : "STAGE",
+            "description" : "Gestion d'équipe, Définition des objectifs et du calendrier, Définition de la charte visuelle des projets et participation aux développements logiciels. 4 projets en relation avec le monde automobile: Deux sites Web (PHP, JS HTML5, CSS3), Outil de gestion des licences client (JSP, JS, TomCat, Cron, Debian, Raspberry Pi) et une application mobile pour voiture connectée (iOS-Swift et Android-Java, OBD2)."
         },
         {
-            "job_title" : "Python-Bash Developer / HelpDesk",
+            "job_title" : "Développeur logiciel - IT",
             "company" : "Gumi",
             "location" : "Paris (FRANCE)",
-            "date" : "SEP 2015 - FEB 2015",
-            "type_of_contract" : "PART TIME INTERNSHIP",
-            "description" : "Maintenance of the computer park, Creation of an internal docker server to help the deployment of the post production environment and Develo­pement of a docker client (Python/Bash) to facilitate the connexion and the deployment of post production environment."
+            "date" : "SEP 2015 - FEV 2015",
+            "type_of_contract" : "Stage à temps partiel",
+            "description" : "Maintenance du parc informatique, Création d'un serveur locale Docker et Développement d'un logiciel client (Python, Bash, Docker) pour faciliter la connexion et le déploiement d'un environnement de post-production."
         },
         {
-            "job_title" : "Deliverer",
+            "job_title" : "Livreur",
             "company" : "Deliver.ee",
             "location" : "Paris (FRANCE)",
-            "date" : "MAR 2015 - MAY 2015",
+            "date" : "MAR 2015 - MAI 2015",
             "type_of_contract" : "CDD",
-            "description" : "Deliver breakfast every week-end."
+            "description" : "Livraison de petit-déjeuner le week-end."
         },
         {
-            "job_title" : "System Administrator Assistant / HelpDesk",
+            "job_title" : "Assistant administrateur système - IT",
             "company" : "Burson Marsteller",
             "location" : "Paris (FRANCE)",
-            "date" : "JUL 2014 - DEC 2014",
-            "type_of_contract" : "INTERNSHIP",
-            "description" : "Network and server administration, User support, Maintenance of computer park, Creation of server backup for the internal intranet and Participation in the Studio / Video of the agency."
+            "date" : "JUIL 2014 - DEC 2014",
+            "type_of_contract" : "STAGE",
+            "description" : "Administration réseau et serveur, Support utilisateurs, Maintenance du parc informatique, Création d'un serveur de sauvegarde pour l'intranet interne (RedHat Entreprise, Bash) et Participation au Studio-Vidéo de l'agence."
         },
         {
-            "job_title" : "Graphic Designer",
+            "job_title" : "Designer graphique",
             "company" : "Anarchic",
             "location" : "Paris (FRANCE)",
-            "date" : "OCT 2013 - APR 2014",
+            "date" : "OCT 2013 - AVR 2014",
             "type_of_contract" : "CDI",
-            "description" : "Create visual identity, Film teaser creation for events and Flyers creation."
+            "description" : "Création d'une identité visuelle, Création de differents supports de promotion (dépliants et vidéos) pour les événements (Adobe CC)."
         },
         {
-            "job_title" : "Consultant Sales",
+            "job_title" : "Conseiller de Vente",
             "company" : "Intersport",
             "location" : "Compiègne (FRANCE)",
-            "date" : "UL 2013 - AUG 2013",
+            "date" : "JUIL 2013 - AUG 2013",
             "type_of_contract" : "CDD",
-            "description" : "Customer reception, customer advice and merchandising."
+            "description" : "Accueil - Conseil clientèle et Merchandising."
         },
         {
-            "job_title" : "Stock Manager",
+            "job_title" : "Gestionnaire de stock",
             "company" : "Chanel",
             "location" : "Le Meux (FRANCE)",
-            "date" : "JUL 2012 - SEP 2012",
+            "date" : "JUIL 2012 - SEP 2012",
             "type_of_contract" : "INTERIM",
-            "description" : "Supply of products and quality control."
+            "description" : "Approvisionnement des produits pour la chaine de distribution et contrôle de qualité."
         },
         {
-            "job_title" : "Warehouseman",
+            "job_title" : "Manutentionnaire",
             "company" : "Chanel",
             "location" : "Le Meux (FRANCE)",
-            "date" : "JUL 2011 - AUG 2011",
+            "date" : "JUIL 2011 - AOUT 2011",
             "type_of_contract" : "INTERIM",
-            "description" : "Quality control."
+            "description" : "Contrôle de qualité."
         },
         {
-            "job_title" : "Consultant Sales",
+            "job_title" : "Conseiller de Vente",
             "company" : "Intersport",
             "location" : "Compiègne (FRANCE)",
-            "date" : "AUG 2010 - SEP 2010",
+            "date" : "AOUT 2010 - SEP 2010",
             "type_of_contract" : "CDD",
-            "description" : "Customer reception and customer advice."
+            "description" : "Accueil - Conseil clientèle"
         },
         {
-            "job_title" : "Agricultural Operation",
+            "job_title" : "Exploitant agricole",
             "company" : "Société Agricole de Francières",
             "location" : "Francières (FRANCE)",
-            "date" : "AUG 2010 - SEP 2010",
+            "date" : "AOUT 2010 - SEP 2010",
             "type_of_contract" : "CDD",
-            "description" : "Fields maintenance."
+            "description" : "Maintenance des champs."
         },
         {
-            "job_title" : "IT Technician",
+            "job_title" : "IT",
             "company" : "Microcom",
             "location" : "Compiègne (FRANCE)",
             "date" : "DEC 2007 - JAN 2008",
-            "type_of_contract" : "INTERNSHIP",
-            "description" : "Setting up workstations with computers and necessary peripheral devices, Checking computer hardware (HDD, mouses, keyboards etc.) to ensure the effective operation, Installing and configuring appropriate software and functions according to specifications."
+            "type_of_contract" : "STAGE",
+            "description" : "Montage d'ordinateur sur mesure, Vérification du matériel (disque dur, ram, processeur, etc.) par test de fatigue pour en garantir le bon fonctionnement, Installation et configuration logiciel appropriés conformément aux spécifications client."
         }
     ],
     "skills" : {
-        "programming_language" : {
+        "langage_de_programmation" : {
             "C" : "75%",
             "C++" : "80%",
             "C#/.NET" : "50%",
@@ -166,35 +166,35 @@
             "ReactJS" : "30%",
             "Node.JS" : "40%"
         },
-        "database" : {
+        "base_de_données" : {
             "SQL" : "75%",
             "Oracle Database 12c" : "60%"
         },
-        "web_development" : {
+        "développement_web" : {
             "HTML" : "90%",
             "CSS" : "85%",
             "PHP" : "75%",
             "JavaScript / JQuery" : "70%",
             "JSP" : "60%"
         },
-        "software" : {
+        "logiciel" : {
             "Adobe Creative Cloud" : "65%",
             "Microsoft Office" : "70%",
             "Docker" : "55%",
             "Git" : "70%",
             "Arduino IDE" : "60%"
         },
-        "operating_system" : [
+        "système_d'exploitation" : [
             "Microsoft Windows",
             "Apple MacOS X",
             "Linux"
         ],
-        "hardware_prototyping" : [
+        "prototypage matériel" : [
             "Arduino",
             "Raspberry Pi",
             "Wemos"
         ],
-        "project_management" : [
+        "gestion_de_projet" : [
             "Trello",
             "Scrum",
             "Agile"

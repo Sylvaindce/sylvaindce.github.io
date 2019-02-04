@@ -66,7 +66,6 @@ function set_language( ) {
   var lang = $.url_param( "lang" );
 
   if ( !lang ) {
-    console.log("add parameter");
     window.location.search += $.param( { lang : "en" } );
     lang = "en";
   }
@@ -99,7 +98,7 @@ function load_data_from_json( lang ) {
 
     //INFO
     $( "#name" ).text( data.info.firstname + " " + data.info.lastname );
-    $( "#age" ).text( data.info.age + " years old" );
+    $( "#age" ).text( data.info.age );
     $( "#address" ).text( data.info.address );
     $( "#country" ).text( data.info.country );
     $( "#email" ).text( data.info.email );

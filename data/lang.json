@@ -2,10 +2,10 @@
     "fr" : {
         "email_desc_txt" : "Ecole",
         "lang_txt" : "Langages:",
-        "interest_txt" : "Interêts:",
+        "interest_txt" : "Inter&ecirc;ts:",
         "education_txt" : " + Formations",
-        "work_experience_txt" : " + Expériences professionnelles",
-        "skills_txt" : " + Compétences"
+        "work_experience_txt" : " + Exp&eacute;riences professionnelles",
+        "skills_txt" : " + Comp&eacute;tences"
     },
     "en" : {
         "email_desc_txt" : "School",
