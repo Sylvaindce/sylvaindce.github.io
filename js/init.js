@@ -2,6 +2,14 @@ String.prototype.capitalize = function( ) {
   return this.charAt( 0 ).toUpperCase() + this.slice( 1 );
 }
 
+$.urlParam = function(name){
+  var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
+  if (results==null) {
+     return null;
+  }
+  return decodeURI(results[1]) || 0;
+}
+
 function generate_random_color( ) {
   var letters = "0123456789ABCDEF";
   var color = '#';
@@ -54,8 +62,12 @@ function update_upper_menu_style_onclick( ) {
   });
 }
 
+function set_language( ) {
+  console.log($.urlParam( "lang" ));
+}
+
 function load_data_from_json( ) {
-  $.getJSON( "decombe_sylvain_cv.json" , function( data ) {
+  $.getJSON( "data/decombe_sylvain_cv_en.json" , function( data ) {
 
     //INFO
     $( "#name" ).text( data.info.firstname + " " + data.info.lastname );
@@ -142,6 +154,7 @@ function load_data_from_json( ) {
 }
 
 $( document ).ready( function() {
+  set_language();
   load_data_from_json();
   update_upper_menu_style_onclick();
   update_upper_menu_style_onscroll();
