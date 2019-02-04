@@ -65,7 +65,7 @@ function update_upper_menu_style_onclick( ) {
 function set_language( ) {
   lang = $.urlParam( "lang" );
   console.log( lang );
-  if (lang.length == 0) {
+  if (!lang) {
     console.log("add parameter");
     window.location.search = window.location.origin + "?lang=en";
   }
