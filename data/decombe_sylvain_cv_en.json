@@ -2,7 +2,7 @@
     "info" : {
         "firstname" : "Sylvain",
         "lastname" : "Decombe",
-        "age" : "25 years old",
+        "age" : "26 years old",
         "address" : "75015, Paris",
         "country" : "FRANCE",
         "email" : "sylvain.decombe@epitech.eu",

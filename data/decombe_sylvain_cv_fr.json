@@ -2,7 +2,7 @@
     "info" : {
         "firstname" : "Sylvain",
         "lastname" : "Decombe",
-        "age" : "25 ans",
+        "age" : "26 ans",
         "address" : "75015, Paris",
         "country" : "FRANCE",
         "email" : "sylvain.decombe@epitech.eu",
@@ -55,7 +55,7 @@
             "location" : "Shanghai (CHINE)",
             "date" : "MAR 2017 - SEP 2017",
             "type_of_contract" : "STAGE (TEMPS PARTIEL)",
-            "description" : "Création d'une identité visuelle, Gérez la conception du site Web (PHP, WORDPRESS, JS) et Création de dépliants (Adobe CC)."
+            "description" : "Création d'une identité visuelle, Gestion de la conception du site Web (PHP, WORDPRESS, JS) et Création de dépliants (Adobe CC)."
         },
         {
             "job_title" : "Promoteur",
@@ -63,7 +63,7 @@
             "location" : "Shanghai (CHINE)",
             "date" : "FEV 2017 - SEP 2017",
             "type_of_contract" : "CDD",
-            "description" : "Création d'un réseau sur la platforme WeChat ainsi que d'un robot de réponse automatique (Python, Wechaty SDK), Création d'un site web de lotterie de tickets boissons (HTML, JQUERY), Promotion de nombreux événements via les réseaux sociaux, Fidélisation clientèle."
+            "description" : "Création d'un réseau sur la plateforme WeChat ainsi que d'un robot de réponse automatique (Python, Wechaty SDK), Création d'un site web de loterie de tickets boissons (HTML, JQUERY), Promotion de nombreux événements via les réseaux sociaux, Fidélisation clients."
         },
         {
             "job_title" : "Chef de Projet - Développeur logiciel Full Stack",
@@ -95,7 +95,7 @@
             "location" : "Paris (FRANCE)",
             "date" : "JUIL 2014 - DEC 2014",
             "type_of_contract" : "STAGE",
-            "description" : "Administration réseau et serveur, Support utilisateurs, Maintenance du parc informatique, Création d'un serveur de sauvegarde pour l'intranet interne (RedHat Entreprise, Bash) et Participation au Studio-Vidéo de l'agence."
+            "description" : "Administration réseau et serveur, Support utilisateurs, Maintenance du parc informatique, Création d'un serveur de sauvegarde pour l'intranet (RedHat Entreprise, Bash) et Participation au Studio-Vidéo de l'agence."
         },
         {
             "job_title" : "Designer graphique",
