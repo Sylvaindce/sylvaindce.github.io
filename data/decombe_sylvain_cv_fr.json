@@ -36,7 +36,7 @@
         {
             "school" : "Lycée Pierre D'ailly",
             "location" : "Compiègne (France)",
-            "date" : "SEP 2012 - JUL 2013",
+            "date" : "SEP 2012 - JUIL 2013",
             "title" : "Baccalauréat section Scientifique"
         }
     ],
@@ -45,7 +45,7 @@
             "job_title" : "Ingénieur Logiciel Full Stack",
             "company" : "SkipperNDT",
             "location" : "Paris (FRANCE)",
-            "date" : "SEP 2017 - Aujourd'hui",
+            "date" : "SEP 2017 - AUJOURD'HUI",
             "type_of_contract" : "CDI",
             "description" : "Développement logiciel (Python, QT, DJANGO Framework, J2E, SWING, C), Prototypage matériel, Création et maintenance d'une plate-forme Cloud (PHP, JS, APACHE, DEBIAN), Rédaction de règles de style de codage, Rédaction d'un projet ayant reçu un financement par la région Ile de France, Gestion de tiers pour des projets spécifiques (cahier des charges ...)"
         },
@@ -54,7 +54,7 @@
             "company" : "Bold&amp;Hill",
             "location" : "Shanghai (CHINE)",
             "date" : "MAR 2017 - SEP 2017",
-            "type_of_contract" : "Stage à temps partiel",
+            "type_of_contract" : "STAGE (TEMPS PARTIEL)",
             "description" : "Création d'une identité visuelle, Gérez la conception du site Web (PHP, WORDPRESS, JS) et Création de dépliants (Adobe CC)."
         },
         {
@@ -78,7 +78,7 @@
             "company" : "Gumi",
             "location" : "Paris (FRANCE)",
             "date" : "SEP 2015 - FEV 2015",
-            "type_of_contract" : "Stage à temps partiel",
+            "type_of_contract" : "STAGE (TEMPS PARTIEL)",
             "description" : "Maintenance du parc informatique, Création d'un serveur locale Docker et Développement d'un logiciel client (Python, Bash, Docker) pour faciliter la connexion et le déploiement d'un environnement de post-production."
         },
         {
