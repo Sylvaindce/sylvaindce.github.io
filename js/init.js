@@ -155,7 +155,7 @@ function load_data_from_json( lang ) {
         }).appendTo( "#skills_container" );
         skills_items = [];
       }
-      skills_items.push( "<div style=\"flex: 1;\"><h4>" + val_0.capitalize().replaceAll("_", " ") + "</h4><div style=\"padding: 2%;\">" );
+      skills_items.push( "<div style=\"flex: 1;\"><h4>" + val_0.capitalize().replace(/_/g, " ") + "</h4><div style=\"padding: 2%;\">" );
       $.each( data.skills[val_0], function( key_1, val_1) {
         if ( val_1.includes( '%' ) ) {
           color = generate_random_color();
