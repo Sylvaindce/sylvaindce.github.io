@@ -2,12 +2,12 @@ String.prototype.capitalize = function( ) {
   return this.charAt( 0 ).toUpperCase() + this.slice( 1 );
 }
 
-$.urlParam = function(name){
-  var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
-  if (results==null) {
+$.url_param = function(name){
+  var results = new RegExp( "[\?&]" + name + "=([^&#]*)").exec( window.location.href );
+  if ( results == null ) {
      return null;
   }
-  return decodeURI(results[1]) || 0;
+  return decodeURI( results[1] ) || 0;
 }
 
 function generate_random_color( ) {
@@ -63,16 +63,38 @@ function update_upper_menu_style_onclick( ) {
 }
 
 function set_language( ) {
-  lang = $.urlParam( "lang" );
-  console.log( lang );
-  if (!lang) {
+  var lang = $.urlParam( "lang" ).toLowerCase();
+
+  if ( !lang ) {
     console.log("add parameter");
-    window.location.search = window.location.origin + "?lang=en";
+    window.location.search += $.urlParam( { lang : en } );
   }
+  switch ( lang ) {
+    case "en":
+      break;
+    case "fr":
+      break;
+    default:
+      lang = "en";
+      break;
+  }
+  load_lang_from_json( lang )
+  return lang;
 }
 
-function load_data_from_json( ) {
-  $.getJSON( "data/decombe_sylvain_cv_en.json" , function( data ) {
+function load_lang_from_json( lang ) {
+  $.getJSON( "data/lang.json" , function( data ) {
+      $( "#email_desc_txt" ).text(data[lang].email_desc_txt);
+      $( "#lang_txt" ).text(data[lang].lang_txt);
+      $( "#interest_txt" ).text(data[lang].interest_txt);
+      $( "#education_txt" ).text(data[lang].education_txt);
+      $( "#work_experience_txt" ).text(data[lang].work_experience_txt);
+      $( "#skills_txt" ).text(data[lang].skills_txt);
+  });
+}
+
+function load_data_from_json( lang ) {
+  $.getJSON( "data/decombe_sylvain_cv_" + lang + ".json" , function( data ) {
 
     //INFO
     $( "#name" ).text( data.info.firstname + " " + data.info.lastname );
@@ -159,8 +181,8 @@ function load_data_from_json( ) {
 }
 
 $( document ).ready( function() {
-  set_language();
-  load_data_from_json();
+  var lang = set_language();
+  load_data_from_json( lang );
   update_upper_menu_style_onclick();
   update_upper_menu_style_onscroll();
   $( "#gen_pdf" ).click(function() {
