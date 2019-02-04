@@ -2,7 +2,7 @@ String.prototype.capitalize = function( ) {
   return this.charAt( 0 ).toUpperCase() + this.slice( 1 );
 }
 
-$.url_param = function(name){
+$.url_param = function( name ){
   var results = new RegExp( "[\?&]" + name + "=([^&#]*)").exec( window.location.href );
   if ( results == null ) {
      return null;
@@ -23,16 +23,16 @@ function update_upper_menu_style_onscroll( ) {
   var __offset = 105;
   $( window ).scroll( function() {
     if ( $( window ).scrollTop() < ( Math.round( $( "#education" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
+      document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
     }
     else if ( $( window ).scrollTop() > ( Math.round( $( "#education").offset().top ) - __offset ) && $( window ).scrollTop() < ( Math.round( $( "#workexperience" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#fbc02d";
+      document.getElementById( "navigation" ).style.backgroundColor = "#FBC02D";
     }
     else if ( $( window ).scrollTop() > ( Math.round( $( "#workexperience" ).offset().top ) - __offset ) && $( window ).scrollTop() < ( Math.round( $( "#skills" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#f44336";
+      document.getElementById( "navigation" ).style.backgroundColor = "#F44336";
     }
     else if ( $( window ).scrollTop() > ( Math.round( $( "#skills" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#4caf50";
+      document.getElementById( "navigation" ).style.backgroundColor = "#4CAF50";
     }
   });
 }
@@ -42,19 +42,19 @@ function update_upper_menu_style_onclick( ) {
     var page = $( this ).attr( "href" );
     switch ( $(page)[0].id ) {
             case "home":
-              document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
+              document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
               break;
             case "education":
-              document.getElementById( "navigation" ).style.backgroundColor = "#fbc02d";
+              document.getElementById( "navigation" ).style.backgroundColor = "#FBC02D";
               break;
             case "workexperience":
-              document.getElementById( "navigation" ).style.backgroundColor = "#f44336";
+              document.getElementById( "navigation" ).style.backgroundColor = "#F44336";
               break;
             case "skills":
-              document.getElementById( "navigation" ).style.backgroundColor = "#4caf50";
+              document.getElementById( "navigation" ).style.backgroundColor = "#4CAF50";
               break;
             default:
-              document.getElementById( "navigation" ).style.backgroundColor = "#42a5f5";
+              document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
               break;
           }
     $( "html, body" ).animate( { scrollTop: $( page ).offset().top - 100 }, "slow" );
@@ -109,7 +109,7 @@ function load_data_from_json( lang ) {
     //LANGUAGES
     languages_items = [];
     $.each( data.languages , function( key, val ) {
-      languages_items.push( "<h4 style=\"margin-top: 4%;\">" + key.capitalize() + " <span class=\"desc\" style=\"color: #ffffff; font-size: small; margin-left: 10px;\">" + val + "</span></h4>" );
+      languages_items.push( "<h4 style=\"margin-top: 4%;\">" + key.capitalize() + " <span class=\"desc\" style=\"color: #FFFFFF; font-size: small; margin-left: 10px;\">" + val + "</span></h4>" );
     });
     $( "<div/>", {
       html: languages_items.join( "" )
@@ -162,7 +162,7 @@ function load_data_from_json( lang ) {
           skills_items.push( "<div class=\"skillbar clearfix\"><div class=\"skillbar-title\" style=\"background: " + color + ";\"><span>" + key_1 + "</span></div><div class=\"skillbar-bar\" style=\"background: " + color + "; width: " + val_1 + ";\"></div><div class=\"skill-bar-percent\">" + val_1 + "</div></div>" );
         }
         else {
-          tmp_str = "<span class=\"desc\" style=\"color: #42a5f5; font-family: Lato;\">" + val_1;
+          tmp_str = "<span class=\"desc\" style=\"color: #42A5F5; font-family: Lato;\">" + val_1;
           if ( key_1 == data.skills[val_0].length - 1 ) {
             tmp_str += "</span>";
           } else {

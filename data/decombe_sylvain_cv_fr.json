@@ -25,7 +25,7 @@
             "school" : "Tongji University",
             "location" : "Shanghai (Chine)",
             "date" : "SEP 2016 - ESCOMPT&Eacute; 2019",
-            "title" : "Master en génie logiciel"
+            "title" : "Master en Génie logiciel"
         },
         {
             "school" : "Epitech, Graduate School of Digital Innovation",
@@ -79,7 +79,7 @@
             "location" : "Paris (FRANCE)",
             "date" : "SEP 2015 - FEV 2015",
             "type_of_contract" : "STAGE (TEMPS PARTIEL)",
-            "description" : "Maintenance du parc informatique, Création d'un serveur locale Docker et Développement d'un logiciel client (Python, Bash, Docker) pour faciliter la connexion et le déploiement d'un environnement de post-production."
+            "description" : "Maintenance du parc informatique, Création d'un serveur local Docker et Développement d'un logiciel client (Python, Bash, Docker) pour faciliter la connexion et le déploiement d'un environnement de post-production."
         },
         {
             "job_title" : "Livreur",
