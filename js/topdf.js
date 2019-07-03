@@ -54,7 +54,7 @@ function to_pdf( filename ) {
         doc.setDrawColor(0)
         doc.setFillColor( 224, 224, 224 );
         doc.rect(0, 0, img_width, page_height + 20, 'F');
-        doc.addImage( img, "PNG", 0, position, img_width, img_height );
+        doc.addImage( img, "PNG", 0, position, img_width, img_height, undefined, 'FAST' );
         height_left -= page_height;
 
         while (height_left >= 0) {
@@ -63,7 +63,7 @@ function to_pdf( filename ) {
             doc.setDrawColor(0)
             doc.setFillColor( 224, 224, 224 );
             doc.rect(0, 0, img_width, page_height + 20, 'F');
-            doc.addImage( img, "PNG", 0, position, img_width, img_height );
+            doc.addImage( img, "PNG", 0, position, img_width, img_height, undefined, 'FAST' );
             height_left -= page_height;
         }
         doc.save( filename + ".pdf" );
