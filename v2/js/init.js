@@ -183,22 +183,21 @@ function load_data_from_json( lang ) {
     //SKILLS
     var skills_categories = Object.keys( data.skills );
     var skills_items = [];
-    var index = 0;
     $.each( skills_categories, function( key_0, val_0 ) {
-      if ( ( key_0 % 2 ) == 0 && skills_items.length != 0 ) {
-        $( "<div/>", {
-          "style": "flex: 1; padding: 2%; flex-direction: row; display: flex;",
-          html: skills_items.join( "" )
-        }).appendTo( "#skills_container" );
-        skills_items = [];
+      skills_items.push("<div class=\"col-sm-6 margin-bottom-sm\">\
+                          <div class=\"main-skills-container\">\
+                            <h4>" + val_0.capitalize().replace(/_/g, " ") + "</h4>");
+      
+      if ( jQuery.type(data.skills[val_0]) === "object" ) {
+        skills_items.push("<div class=\"skills-container\"><div class=\"sub-skills-container\"><ul>");
+        $.each( data.skills[val_0], function( key_1, val_1) {
+          skills_items.push("<li>" + key_1 + " <span>" + val_1 + "</span></li>");
+        });
+        skills_items.push("</ul></div></div>");
       }
-      skills_items.push( "<div style=\"flex: 1;\"><h4>" + val_0.capitalize().replace(/_/g, " ") + "</h4><div style=\"padding: 2%;\">" );
-      $.each( data.skills[val_0], function( key_1, val_1) {
-        if ( val_1.includes( '%' ) ) {
-          var color = generate_random_color();
-          skills_items.push( "<div class=\"skillbar clearfix\"><div class=\"skillbar-title\" style=\"background: " + color + ";\"><span>" + key_1 + "</span></div><div class=\"skillbar-bar\" style=\"background: " + color + "; width: " + val_1 + ";\"></div><div class=\"skill-bar-percent\">" + val_1 + "</div></div>" );
-        }
-        else {
+      else if ( jQuery.type(data.skills[val_0]) === "array" ) {
+        skills_items.push("<div style=\"margin-top: 26px; text-align: center;\">");
+        $.each( data.skills[val_0], function( key_1, val_1) {
           var tmp_str = "<span class=\"desc\" style=\"color: #42A5F5; font-family: Lato;\">" + val_1;
           if ( key_1 == data.skills[val_0].length - 1 ) {
             tmp_str += "</span>";
@@ -206,14 +205,12 @@ function load_data_from_json( lang ) {
             tmp_str += ", </span>";
           }
           skills_items.push( tmp_str );
-        }
-      });
+        });
+        skills_items.push("</div>");
+      }
       skills_items.push("</div></div>");
     });
-    $( "<div/>", {
-      "style": "flex: 1; padding: 2%;",
-      html: skills_items.join( "" )
-    }).appendTo( "#skills_container" );
+    $("#skills_container").append(skills_items.join( "" ));
   });
 }
 
@@ -319,10 +316,10 @@ function update_upper_menu_style_onclick( ) {
 /*************** Main Begin ***************/
 
 $( document ).ready( function() {
+  smooth_scroll_on_click();
   var lang = set_language();
   load_data_from_json( lang );
   nav_bar_init();
-  smooth_scroll_on_click();
   collapse_menu_on_click();
 
   //update_upper_menu_style_onclick();
