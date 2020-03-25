@@ -1628,7 +1628,7 @@ footer .goto-top a:hover span {
 
   #main_content.active {
     margin-left: 17rem;
-    width: calc(100% - 17rem);
+    /*width: calc(100% - 17rem);*/
   }
 
   header.fixed .btn {
@@ -1784,7 +1784,7 @@ footer .goto-top a:hover span {
 
   #main_content.active {
     margin-left: 17rem;
-    width: calc(100% - 17rem);
+    /*width: calc(100% - 17rem);*/
   }
 }
 @media only screen and (max-width: 414px) {
