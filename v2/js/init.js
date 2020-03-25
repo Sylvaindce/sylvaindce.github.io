@@ -262,6 +262,7 @@ function smooth_scroll_on_click( ) {
 function collapse_menu_on_click( ) {
   $('#sidebarCollapse').on('click', function() {
     $('#sidebar, #main_content').toggleClass('active');
+    return false;
   });
 }
 
@@ -317,10 +318,10 @@ function update_upper_menu_style_onclick( ) {
 
 $( document ).ready( function() {
   smooth_scroll_on_click();
-  var lang = set_language();
-  load_data_from_json( lang );
   nav_bar_init();
   collapse_menu_on_click();
+  var lang = set_language();
+  load_data_from_json( lang );
 
   //update_upper_menu_style_onclick();
   //update_upper_menu_style_onscroll();

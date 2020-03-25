@@ -1558,7 +1558,7 @@ footer .goto-top a:hover span {
   }
   header .btn {
     /*color:$primary_font_color;*/
-    background: #141414;
+    background: transparent;
   }
   header .btn .mask {
     background: #141414;
@@ -1573,7 +1573,8 @@ footer .goto-top a:hover span {
   }
 
   .float-right.menu-wrap {
-    display: block;
+    /*display: block;*/
+    display: none;
   }
 
   .content-block {
@@ -1612,7 +1613,8 @@ footer .goto-top a:hover span {
   }
 
   #sidebar {
-    margin-left: -17rem;
+    /*margin-left: -17rem;*/
+    margin-left: 0rem;
     z-index: 0;
   }
 
@@ -1685,6 +1687,26 @@ footer .goto-top a:hover span {
     text-align: left;
   }
 }
+
+@media only screen and (max-width: 991px) {
+	.float-right.menu-wrap {
+		display: block;
+	}
+
+	#sidebar {
+		margin-left: -17rem;
+		z-index: 0;
+  }
+  
+  header {
+		background: transparent;
+  }
+  
+  header.fixed {
+    background: rgba(0, 0, 0, 255);
+  }
+}
+
 @media only screen and (max-width: 767px) {
   .education-wrap .qualfication .row-count {
     margin-bottom: 15px;
