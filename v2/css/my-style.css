@@ -1807,8 +1807,8 @@ footer .goto-top a:hover span {
   margin: 0px 0px -12px 0px;
   position: relative;
   z-index: 2;
-  background: rgba(0, 0, 0, 0) url(../images/background.svg) no-repeat;
-  background-size: 100%;
+  background: rgba(0, 0, 0, 0) url(../images/background.svg) repeat;
+  background-size: cover;
   background-position: center;
   background-clip: text;
   -webkit-background-clip: text;
@@ -1827,8 +1827,8 @@ footer .goto-top a:hover span {
   padding: 26px;
   background: transparent;*/
   border: 0.5rem solid transparent;
-  background: rgba(0, 0, 0, 0) url(../images/background.svg) no-repeat;
-  background-size: 100%;
+  background: rgba(0, 0, 0, 0) url(../images/background.svg) repeat;
+  background-size: cover;
   background-position: center;
   background-attachment: fixed;
   position: relative;
