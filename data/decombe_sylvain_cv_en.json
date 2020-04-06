@@ -7,7 +7,8 @@
         "country" : "FRANCE",
         "email" : "sylvain.decombe@epitech.eu",
         "picture" : "images/sylvain_decombe.jpg",
-        "description" : "Driver Licence"
+        "short_description" : "I am Sylvain.<br/>FullStack developer.",
+        "description" : "Rocked from the earliest age by technology, I spent my free time creating websites but also to carry out the repair of computer hardware.<br/><br/>In Constant Renewal with the actual society, I stand out with my personality and by the desire to do something that corresponds to me.<br/><br/>I also have the quality of self-training driven by the desire to do all by myself."
     },
     "languages" : {
       "french" : "Mother tongue",

@@ -18,19 +18,43 @@ function to_pdf( filename ) {
         return;
     }
 
-    $( "#navigation" ).css( "visibility", "hidden" );
+    var page_height = $( document ).height();
+    var page_width = 1654;
+
+    $( ".background" ).css( {
+        "background-repeat" : "repeat",
+        "background-size" : "auto",
+        "height" : page_height + "px",
+        "width" : page_width + "px",
+    } );
+
+    $( "nav" ).css( "visibility", "hidden" );
     $( "#gen_pdf" ).css( "visibility", "hidden" );
-    $( "#mainview" ).css( "padding-top", "0vh");
-    $( "#skills" ).parent().parent().css( "margin-top", "42vh" );
-    old_width = document.body.style.width;
-    width = 1654;
-    document.body.style.width = width + "px";
+    $( "#main_container" ).removeClass( "col-lg-8" );
+    $( "#main_container" ).addClass( "col-lg-9" );
+
+    $( "#nav_container" ).removeClass( "col-lg-4" );
+    $( "#nav_container" ).addClass( "col-lg-3" );
+
+    $( ".main-skills-container h4" ).css( {
+        "color" : "#e91e63",
+        "background" : "none",
+    } );
+    
+    $( ".skills-container" ).css( "border", "0.5rem solid #280068");
+
+    $( ".social-icons" ).css( "visibility", "hidden" );
+    $( ".goto-top" ).css( "visibility", "hidden" );
+   
+    document.body.style.width = page_width + "px";
+    width = undefined;
 
     var html_body = document.body;
-    var tmp = $( "#home" ).get(0);
+    var tmp = $( "#body" ).get(0);
 
     var w = tmp.offsetWidth;
     var h = tmp.offsetHeight;
+    tmp = undefined;
 
     var doc = new jsPDF( 'p', "mm", "a4" );
 
@@ -52,7 +76,7 @@ function to_pdf( filename ) {
         var position = 0;
         
         doc.setDrawColor(0)
-        doc.setFillColor( 224, 224, 224 );
+        doc.setFillColor( 40, 0, 104 );
         doc.rect(0, 0, img_width, page_height + 20, 'F');
         doc.addImage( img, "PNG", 0, position, img_width, img_height, undefined, 'FAST' );
         height_left -= page_height;
@@ -61,7 +85,7 @@ function to_pdf( filename ) {
             position = height_left - img_height;
             doc.addPage( );
             doc.setDrawColor(0)
-            doc.setFillColor( 224, 224, 224 );
+            doc.setFillColor( 40, 0, 104 );
             doc.rect(0, 0, img_width, page_height + 20, 'F');
             doc.addImage( img, "PNG", 0, position, img_width, img_height, undefined, 'FAST' );
             height_left -= page_height;
@@ -69,17 +93,32 @@ function to_pdf( filename ) {
         doc.save( filename + ".pdf" );
     });
 
-    /*var doc = new jsPDF('p', 'pt', 'a4');
-	doc.html( html_body, { callback : function( doc ) {
-            doc.save( "html.pdf" );
-		}
-    });*/
-
     setTimeout( function( ) {
-        $( "#navigation" ).css( "visibility", "visible" );
+        $( ".background" ).css( {
+            "background-repeat" : "no-repeat",
+            "background-size" : "cover",
+            "height" : "100%",
+            "width" : "100%",
+        } );
+
+        $( "#main_container" ).removeClass( "col-lg-9" );
+        $( "#main_container" ).addClass( "col-lg-8" );
+    
+        $( "#nav_container" ).removeClass( "col-lg-3" );
+        $( "#nav_container" ).addClass( "col-lg-4" );
+
+        $( ".main-skills-container h4" ).css( {
+            "color" : "white",
+            "background" : "",
+        } );
+        
+        $( ".skills-container" ).css( "border", "0.5rem solid transparent" );
+
+        $( "nav" ).css( "visibility", "visible" );
         $( "#gen_pdf" ).css( "visibility", "visible" );
-        $( "#mainview" ).css( "padding-top", "8vh");
-        $( "#skills" ).parent().parent().css( "margin-top", "0vh" );
-        document.body.style.width = old_width;
+        $( ".social-icons" ).css( "visibility", "visible" );
+        $( ".goto-top" ).css( "visibility", "visible" );
+
+        document.body.style.width = "";
     }, 6000);
 }

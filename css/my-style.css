@@ -469,13 +469,14 @@ p {
 
 /********About Sec CSS********/
 .content-block {
-  background: #fff;
-  border-top-left-radius: 10px;
-  -moz-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-  -o-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-  -webkit-transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
-  transition: all 0.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  background: #FFFFFF;
+  border-top-left-radius: 1.4rem;
+  /*-moz-transition: all 4.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -o-transition: all 4.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  -webkit-transition: all 4.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;
+  transition: all 4.9s cubic-bezier(0.19, 1, 0.22, 1) 0s;*/
 }
+
 .content-block .person-img {
   height: 150px;
   width: 150px;

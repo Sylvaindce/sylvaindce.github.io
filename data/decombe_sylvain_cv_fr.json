@@ -7,6 +7,7 @@
         "country" : "FRANCE",
         "email" : "sylvain.decombe@epitech.eu",
         "picture" : "images/sylvain_decombe.jpg",
+        "short_description" : "Je suis Sylvain.<br/>Developpeur FullStack.",
         "description" : "Permis de conduire A/B"
     },
     "languages" : {

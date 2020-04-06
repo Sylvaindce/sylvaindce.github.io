@@ -4,13 +4,15 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="viewport" content="width=device-width" />
   <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
-  <link rel="stylesheet" href="css/mystyle.css">
+  <link rel="stylesheet" href="css/my-style.css">
   <title>Sylvain Decombe</title>
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/typed.min.js"></script>
   <script type="text/javascript" src="js/html2canvas.min.js"></script>
   <script type="text/javascript" src="js/jspdf-1.5.3.min.js"></script>
-  <script type="text/javascript" src="js/init.js"></script>
   <script type="text/javascript" src="js/topdf.js"></script>
+  <script type="text/javascript" src="js/init.js"></script>
   <meta name="format-detection" content="telephone=no">
   <meta name="author" content="Sylvain DECOMBE">
   <meta name="description" content="Curriculum vitae Sylvain Decombe">
@@ -18,104 +20,216 @@
 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
 </head>
-<body id="home">
-  <header>
-    <nav id="navigation">
-      <ul>
-        <li><a class="smooth" href="#home"><i class="fas fa-user-circle fa-2x"></i></a></li>
-        <li><a class="smooth" href="#education"><i class="fas fa-graduation-cap fa-2x"></i></a></li>
-        <li><a class="smooth" href="#workexperience"><i class="fas fa-briefcase fa-2x"></i></a></li>
-        <li><a class="smooth" href="#skills"><i class="fas fa-check-square fa-2x"></i></a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="row">
-    <div id="leftview">
-      <img id="profil_picture" class="profil"/>
-      <div style="text-align:center; padding:5%; color: white;">
-        <h2 id="name"></h2>
-        <div style="margin-top: 2%; font-family: LatoLight;">
-          <p id="age"></p>
-          <p id="info_description"></p>
-        </div>
-        <div style="text-align: center; margin-top: 15%; display: flex;">
-          <div style="flex: 0.5;">
-            <h4><i class="fa fa-map fa-2x"></i></h4>
-          </div>
-          <div style="flex: 1.5; text-align: left;">
-            <h4 id="address"></h4>
-            <p id="country" class="desc" style="color: #ffffff;"></p>
-          </div>
-        </div>
-        <!--div style="text-align: center; margin-top: 15%; display: flex;">
-          <div style="flex: 0.5;">
-            <h4><i class="fa fa-phone fa-2x"></i></h4>
-          </div>
-          <div style="flex: 1.5; text-align: left;">
-            <h4><a style="text-decoration: none !important; color: white !important;" href="tel:+33687169464">On demand</a></h4>
-            <p class="desc" style="color: #ffffff;">Mobile</p>
-          </div>
-        </div-->
-        <div style="text-align: center; margin-top: 15%; display: flex;">
-          <div style="flex: 0.5;">
-            <h4><i class="fa fa-envelope fa-2x"></i></h4>
-          </div>
-          <div style="flex: 1.5; text-align: left;">
-            <h4><a id="email" style="text-decoration: none !important; color: white !important; word-break: break-all;"></a></h4>
-            <p id="email_desc_txt" class="desc" style="color: #ffffff;"></p>
-          </div>
-        </div>
-        <div style="margin-top: 20%; width: 110%; margin-left: -5%; height: 2px; background: #ffffff;"></div>
-        <div style="text-align: center; margin-top: 15%; display: flex;">
-          <div style="flex: 0.5;">
-            <h4><i class="fa fa-language fa-2x"></i></h4>
-          </div>
-          <div style="flex: 1.5; text-align: left;" id="languages_container">
-            <h4 id="lang_txt"></h4>
-            <br/>
+<body id="body">
 
-          </div>
-        </div>
-        <div style="text-align: center; margin-top: 15%; display: flex;">
-          <div style="flex: 0.5;">
-            <h4><i class="fa fa-tags fa-2x"></i></h4>
-          </div>
-          <div style="flex: 1.5; text-align: left;" id="interests_container">
-            <h4 id="interest_txt"></h4>
-            <br/>
+  <div class="background"></div>
+  <div class="background-overlay"></div>
 
+  <div class="container-fluid">
+			<div class="row">
+          <div id="nav_container" class="col-lg-4 col-xs-12 pad-zero">         
+            <nav class="navbar navbar-default vertical-nav" id="sidebar" role="navigation">
+                <ul class="nav navbar-nav flex-column mb-0">
+                  <li class="nav-item">
+                    <a href="#about" class="nav-link smooth">
+                        <span id="about_txt">About</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#education" class="nav-link smooth">
+                        <span id="education_txt">Education</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#workexperience" class="nav-link smooth">
+                        <span id="work_experience_txt">Work Experience</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="#skill" class="nav-link smooth">
+                        <span id="skills_txt">Skill</span>
+                    </a>
+                  </li>
+                </ul>              
+              </nav>
+				</div>
+				
+				<div id="main_container" class="col-lg-8 col-xs-12 pad-zero">
+					
+					<!--Header-->
+					<header>
+						<div class="header-wrap col-lg-10 center-div">
+							<div class="float-left name">
+								<a href="#body">
+									<span id="name"></span>
+								</a>	
+							</div>	
+              
+              <div class="float-right menu-wrap">
+                  <a id="sidebarCollapse" href="#" class="btn btn-default float-left">
+                    <span class="mask"></span>
+                    <span class="btn-label">
+                      <span class="icon fas icon-menu" data-hover="&#xf0c9;">&#xf0c9;</span>
+                    </span>
+                  </a>
+              </div>
+
+							<div class="float-right social-download-wrap">
+								<a id="gen_pdf" href="#" class="btn btn-default float-left">
+									<span class="mask"></span>
+									<span class="btn-label">
+										<b id="download_resume_button"></b>
+                    <span class="icon fas icon-download" data-hover="&#xf56d;">&#xf56d;</span>
+									</span>
+                </a>
+              </div>
+              
+
+						</div>
+					</header>
+					<!--/Header-->
+					
+					<!--Main Content-->
+					<div id="main_content" class="content-block margin-top-150 margin-top-sm-70 margin-top-xs-50" style="background: white;">
+					
+						<!--Introduction Sec-->
+						<section id="about"  class="col-lg-10 col-md-11 col-sm-11 center-div intro-content-wrap sec-pad">
+              <div id="profil_picture" class="person-img margin-bottom-xs"></div>
+							<h1 id="hello_txt"><span id="typed"></span></h1>
+							<h6 id="about_txt">
+								about
+							</h6>
+							<p id="info_description" class="pad-bottom-35">
+							</p>
+						</section>
+						<!--/Introduction Sec-->
+						
+						<hr class="separater-hr"/>
+						
+						<!--WhatWeDo Sec-->
+						<!--section id="services_sec" class="col-lg-10 col-md-11 col-sm-11 center-div services-icon-wrap sec-pad-top sec-pad-bottom-xs">
+							<h6>what i do</h6>
+							<div class="row">
+								<div class="col-sm-3 col-xs-6 margin-bottom-sm icon-wrap">
+									<span class="icon pe-7s-network"></span>
+									<span class="key-fact">
+										PROTOTYPING
+									</span>
+								</div>
+							</div>	
+						</section-->
+						<!--/WhatWeDo Sec-->
+						
+            <hr class="separater-hr"/>
+              
+              <!--Qualfication Sec-->
+              <section id="education" class="col-lg-10 col-md-11 col-sm-11 center-div education-wrap sec-pad">
+                <h6 id="education_txt">education</h6>
+                
+                <div id="education_container" class="container qualfication-wrap">
+                </div>
+
+              </section>	
+              <!--/Qualfication Sec-->
+              
+              <hr class="separater-hr"/>
+              
+              <!--Experience Sec-->
+              <section id="workexperience"  class="col-lg-10 col-md-11 col-sm-11 center-div experience-wrap sec-pad">
+                <h6 id="work_experience_txt">experience</h6>
+
+                <div class="container margin-top-40" id="workexperience_container">
+                </div>
+              
+              </section>	
+              <!--/Experience Sec-->
+              
+              <hr class="separater-hr"/>
+              
+              <!--Achivement Sec-->
+              <!--section id="achivement_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div achivement-wrap  sec-pad-top sec-pad-bottom-sm">
+                <h6>achivements</h6>
+                <p>Achivements</p>
+                <div class="achivement-list-wrap margin-top-40">
+                  <ul class="row">
+                    <li class="col-sm-6">
+                      <ul>
+                        <li class="margin-bottom-xs">
+                        <span class="dash-pointer">-</span>
+                        <span class="achive-pts">ADI Software</span>
+                        </li>
+                        <li class="margin-bottom-xs"><span class="dash-pointer">-</span><span class="achive-pts"></span></li>
+                      </ul>
+                    </li>
+                </div>	
+              </section-->
+              <!--/Achivement Sec-->
+
+              <hr class="separater-hr"/>
+
+            <!--Skills Sec-->
+						<section id="skill"  class="col-lg-10 col-md-11 col-sm-11 center-div skills-wrap  sec-pad-top sec-pad-bottom-xs">
+                <h6 id="skills_txt">technical skills</h6>
+
+                <div id="skills_container" class="row margin-top-40">
+                </div>
+
+              </section>
+              <!--/Skills Sec-->
+              
+              <hr class="separater-hr"/>
+              
+              <!--Contact Sec-->
+              <section id="contact_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div contact-wrap  sec-pad">
+                <h6 id="contact_txt">contact</h6>
+                
+                <div class="email-direct">
+                  <p><span id="contact_content_txt"></span><a href="mailto:sylvain.decombe@epitech.eu">sylvain.decombe@epitech.eu</a>.</p>
+                </div>
+              </section>
+              <!--Contact Sec-->
+              
+              <hr class="separater-hr"/>
+              
+              <!--Footer-->
+              <footer class="col-lg-10 col-md-11 col-sm-11 center-div contact-wrap sec-pad">
+                <div class="row">
+                  <div class="col-sm-6 available-wrap">
+                    <span class="available-pointer"></span>
+                    <span class="available-tag" id="more_txt"></span>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="social-icons-wrap float-right">
+                      <!--Social Icons-->
+                      <ul class="social-icons float-right">
+                        <li>
+                          <a href="#" class="social-icon">
+                            <span class="fab" data-hover="&#xf09b;">&#xf09b;</span>
+                          </a>
+                        </li>
+                      </ul>
+                      <!--/Social Icons-->
+                    </div>
+                    <div class="goto-top text-right float-right">
+                      <a class="smooth" href="#body">
+                        <span data-hover="top">
+                          top
+                        </span>
+                      </a>
+                    </div>
+                    <div class="copywrite-wrap text-right float-right">
+                      <p class="copywrite">Developped by <b>DECOMBE Sylvain &copy; 2010.</b></p>
+                    </div>
+                  </div>	
+                </div>	
+              </footer>
+              <!--/Footer-->
+              
+            </div>	
+            <!--/Main Content-->
+            
           </div>
-        </div>
+        </div>	
       </div>
-    </div>
-    <div id="mainview">
-      <div class="container">
-        <div class="rightposition"><span id="education"></span></div>
-        <h2 id="education_txt" style="color: #fbc02d;"><i class="fas fa-graduation-cap fa-lg"></i></h2>
-        <div style="margin: 4%;" id="education_container">
-
-        </div>
-      </div>
-      <div class="container">
-        <div class="rightposition3"><span id="workexperience"></span></div>
-        <h2 id="work_experience_txt" style="color: #f44336;"><i class="fas fa-briefcase fa-lg"></i></h2>
-        <div style="margin: 4%;" id="workexperience_container">
-
-        </div>
-      </div>
-      <div class="container">
-        <div class="rightposition"><span id="skills"></span></div>
-        <h2 id="skills_txt" style="color: #4caf50;"><i class="fas fa-check-square fa-lg"></i></h2>
-        <div style="margin: 4%; display: flex; flex-direction: column;" id="skills_container">
-
-      </div>
-    </div>
-    <div>
-      <h4 style="text-align: center; margin-bottom: 10px;">Copyright © 2010 Sylvain Decombe. All rights reserved.</h4>
-    </div>
-    <a title="Download a PDF version" href="#" id="gen_pdf" class="floatting-button">
-      <i title="Download a PDF version" class="fas fa-file-pdf my-floatting-button"></i>
-    </a>
-  </div>
 </body>
 </html>

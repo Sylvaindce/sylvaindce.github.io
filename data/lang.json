@@ -1,18 +1,30 @@
 {
     "fr" : {
+        "hello_txt" : "Bonjour!",
+        "about_txt" : "À Propos",
         "email_desc_txt" : "Ecole",
         "lang_txt" : "Langages:",
         "interest_txt" : "Interêts:",
-        "education_txt" : " + Formations",
-        "work_experience_txt" : " + Expériences Professionnelles",
-        "skills_txt" : " + Compétences"
+        "education_txt" : " Formations",
+        "work_experience_txt" : "Expérience Professionnelle",
+        "skills_txt" : " Compétence",
+        "contact_txt" : "Me Contacter",
+        "contact_content_txt" : "Envoyez-moi simplement un e-mail à ",
+        "download_resume_button" : "Télécharger mon CV",
+        "more_txt" : "En recherche d'emploi."
     },
     "en" : {
+        "hello_txt" : "Hi!",
+        "about_txt" : "About",
         "email_desc_txt" : "School",
         "lang_txt" : "Languages:",
         "interest_txt" : "Interests:",
-        "education_txt" : " + Education",
-        "work_experience_txt" : " + Work Experience",
-        "skills_txt" : " + Skills"
+        "education_txt" : "Education",
+        "work_experience_txt" : "Work Experience",
+        "skills_txt" : "Skills",
+        "contact_txt" : "Contact",
+        "contact_content_txt" : "Simply email me at ",
+        "download_resume_button" : "Download resume",
+        "more_txt" : "Looking for a job."
     }
 }
