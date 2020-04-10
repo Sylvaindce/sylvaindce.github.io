@@ -43,8 +43,13 @@ function to_pdf( filename ) {
     
     $( ".skills-container" ).css( "border", "0.5rem solid #280068");
 
-    $( ".social-icons" ).css( "visibility", "hidden" );
+    $( ".social-icons-wrap" ).css( "visibility", "hidden" );
     $( ".goto-top" ).css( "visibility", "hidden" );
+
+    $( ".more_about_me li i" ).css( "display", "none" );
+    $( ".more_about_me" ).css( "text-align", "right" );
+
+    $( ".lang_chooser_txt" ).css( "visibility", "hidden" );
    
     document.body.style.width = page_width + "px";
     width = undefined;
@@ -116,8 +121,11 @@ function to_pdf( filename ) {
 
         $( "nav" ).css( "visibility", "visible" );
         $( "#gen_pdf" ).css( "visibility", "visible" );
-        $( ".social-icons" ).css( "visibility", "visible" );
+        $( ".social-icons-wrap" ).css( "visibility", "visible" );
         $( ".goto-top" ).css( "visibility", "visible" );
+        $( ".more_about_me li i" ).css( "display", "block" );
+        $( ".more_about_me" ).css( "text-align", "left" );
+        $( ".lang_chooser_txt" ).css( "visibility", "visible" );
 
         document.body.style.width = "";
     }, 6000);

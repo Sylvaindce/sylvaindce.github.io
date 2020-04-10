@@ -58,11 +58,14 @@ function set_language( ) {
   }
   switch ( lang.toLowerCase() ) {
     case "en":
+      $( "#lang_chooser_txt" ).text( "FR" );
       break;
     case "fr":
+      $( "#lang_chooser_txt" ).text( "EN" );
       break;
     default:
       lang = "en";
+      $( "#lang_chooser_txt" ).text( "FR" );
       break;
   }
   load_lang_from_json( lang )
@@ -91,11 +94,11 @@ function load_data_from_json( lang ) {
   $.getJSON( "data/decombe_sylvain_cv_" + lang + ".json" , function( data ) {
     //INFO
     $( "#name" ).text( data.info.firstname + " " + data.info.lastname );
-    $( "#age" ).text( data.info.age );
-    $( "#address" ).text( data.info.address );
-    $( "#country" ).text( data.info.country );
-    $( "#email" ).text( data.info.email );
-    $( "#email" ).attr( "mailto:" + data.info.email );
+    $( "#age_txt" ).append( data.info.age );
+    $( "#address_txt" ).append( data.info.address );
+    $( "#driver_txt" ).append( data.info.driver_licence );
+    $( "#email_txt" ).text( data.info.email );
+    $( "#email_txt" ).attr( "href", "mailto:" + data.info.email );
     //$( "#profil_picture" ).attr( "src", data.info.picture );
     $( "#profil_picture" ).css("background-image", "url(" + data.info.picture + ")")
     $( "#info_description" ).html( data.info.description );
@@ -112,15 +115,10 @@ function load_data_from_json( lang ) {
     typed = undefined;
 
     //LANGUAGES
-    var languages_items = [];
     $.each( data.languages , function( key, val ) {
-      languages_items.push( "<h4 style=\"margin-top: 4%;\">" + key.capitalize() + " <span class=\"desc\" style=\"color: #FFFFFF; font-size: small; margin-left: 10px;\">" + val + "</span></h4>" );
+      $( "#lang_list" ).append(`<li>${key.capitalize()} <span>${val}</span></li>`);
     });
-    $( "<div/>", {
-      html: languages_items.join( "" )
-    }).appendTo( "#languages_container" );
-    languages_items = undefined;
-
+    
     //INTEREST
     var interests_items = [];
     $.each( data.interests , function( key, val ) {
@@ -233,23 +231,6 @@ function nav_bar_init( ) {
 function smooth_scroll_on_click( ) {
   $( ".smooth" ).click( function() {
     var page = $( this ).attr( "href" );
-    /*switch ( $(page)[0].id ) {
-            case "home":
-              document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
-              break;
-            case "education":
-              document.getElementById( "navigation" ).style.backgroundColor = "#FBC02D";
-              break;
-            case "workexperience":
-              document.getElementById( "navigation" ).style.backgroundColor = "#F44336";
-              break;
-            case "skills":
-              document.getElementById( "navigation" ).style.backgroundColor = "#4CAF50";
-              break;
-            default:
-              document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
-              break;
-          }*/
     $( "html, body" ).animate( { scrollTop: $( page ).offset().top }, "slow" );
     return false;
   });
@@ -262,48 +243,22 @@ function collapse_menu_on_click( ) {
   });
 }
 
-/*function update_upper_menu_style_onscroll( ) {
-  var __offset = 105;
-  $( window ).scroll( function() {
-    if ( $( window ).scrollTop() < ( Math.round( $( "#education" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
-    }
-    else if ( $( window ).scrollTop() > ( Math.round( $( "#education").offset().top ) - __offset ) && $( window ).scrollTop() < ( Math.round( $( "#workexperience" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#FBC02D";
-    }
-    else if ( $( window ).scrollTop() > ( Math.round( $( "#workexperience" ).offset().top ) - __offset ) && $( window ).scrollTop() < ( Math.round( $( "#skills" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#F44336";
-    }
-    else if ( $( window ).scrollTop() > ( Math.round( $( "#skills" ).offset().top ) - __offset )) {
-      document.getElementById( "navigation" ).style.backgroundColor = "#4CAF50";
+function change_lang( ) {
+  $( "#lang_chooser_txt" ).on( "click", function() {
+    var act_lang = $( "#lang_chooser_txt" ).text();
+    switch ( act_lang.toLowerCase() ) {
+      case "en":
+        location.href = location.href.replace("lang=fr", "lang=en");
+        break;
+      case "fr":
+        location.href = location.href.replace("lang=en", "lang=fr");
+        break;
+      default:
+        location.href = location.href.replace("lang=fr", "lang=en");
+        break;
     }
   });
 }
-
-function update_upper_menu_style_onclick( ) {
-  $( ".smooth" ).on( "click" , function() {
-    var page = $( this ).attr( "href" );
-    switch ( $(page)[0].id ) {
-            case "home":
-              document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
-              break;
-            case "education":
-              document.getElementById( "navigation" ).style.backgroundColor = "#FBC02D";
-              break;
-            case "workexperience":
-              document.getElementById( "navigation" ).style.backgroundColor = "#F44336";
-              break;
-            case "skills":
-              document.getElementById( "navigation" ).style.backgroundColor = "#4CAF50";
-              break;
-            default:
-              document.getElementById( "navigation" ).style.backgroundColor = "#42A5F5";
-              break;
-          }
-    $( "html, body" ).animate( { scrollTop: $( page ).offset().top - 100 }, "slow" );
-    return false;
-  });
-}*/
 
 /*************** Navigation End ***************/
 
@@ -318,6 +273,7 @@ $( document ).ready( function() {
   collapse_menu_on_click();
   var lang = set_language();
   load_data_from_json( lang );
+  change_lang();
 
   $( "#gen_pdf" ).click(function() {
     window.scrollTo( 0, 0 );

@@ -50,6 +50,11 @@
                         <span id="skills_txt">Skill</span>
                     </a>
                   </li>
+                  <li class="nav-item">
+                    <a href="#contact" class="nav-link smooth">
+                        <span id="contact_txt">Contact</span>
+                    </a>
+                  </li>
                 </ul>              
               </nav>
 				</div>
@@ -74,6 +79,10 @@
                   </a>
               </div>
 
+              <div class="float-right lang_chooser">
+                <p><a id="lang_chooser_txt" href="#">FR</a></p>
+              </div>
+
 							<div class="float-right social-download-wrap">
 								<a id="gen_pdf" href="#" class="btn btn-default float-left">
 									<span class="mask"></span>
@@ -84,7 +93,6 @@
                 </a>
               </div>
               
-
 						</div>
 					</header>
 					<!--/Header-->
@@ -99,8 +107,23 @@
 							<h6 id="about_txt">
 								about
 							</h6>
-							<p id="info_description" class="pad-bottom-35">
-							</p>
+              <p id="info_description" class="pad-bottom-35"></p>
+              <div class="col-lg-14 col-md-15 col-sm-15 center-div sec-pad-bottom-xs">
+                <div class="row margin-top-40">
+                  <div class="col-sm-6">
+                    <h6 id="lang_txt"></h6>
+                    <ul id="lang_list"></ul>
+                  </div>
+                  <div style="text-align: right;" class="col-sm-6">
+                    <h6 id="more_about_txt"></h6>
+                    <ul class="more_about_me">
+                      <li id="age_txt"><i class="fas fa-id-badge"></i></li>
+                      <li id="address_txt"><i class="fas fa-map-marker-alt"></i></li>
+                      <li id="driver_txt"><i class="fas fa-car"></i></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
 						</section>
 						<!--/Introduction Sec-->
 						
@@ -168,7 +191,7 @@
               <hr class="separater-hr"/>
 
             <!--Skills Sec-->
-						<section id="skill"  class="col-lg-10 col-md-11 col-sm-11 center-div skills-wrap  sec-pad-top sec-pad-bottom-xs">
+						<section id="skill" class="col-lg-10 col-md-11 col-sm-11 center-div skills-wrap sec-pad-top sec-pad-bottom-xs">
                 <h6 id="skills_txt">technical skills</h6>
 
                 <div id="skills_container" class="row margin-top-40">
@@ -180,11 +203,11 @@
               <hr class="separater-hr"/>
               
               <!--Contact Sec-->
-              <section id="contact_sec"  class="col-lg-10 col-md-11 col-sm-11 center-div contact-wrap  sec-pad">
+              <section id="contact"  class="col-lg-10 col-md-11 col-sm-11 center-div contact-wrap  sec-pad">
                 <h6 id="contact_txt">contact</h6>
                 
                 <div class="email-direct">
-                  <p><span id="contact_content_txt"></span><a href="mailto:sylvain.decombe@epitech.eu">sylvain.decombe@epitech.eu</a>.</p>
+                  <p><span id="contact_content_txt"></span><a id="email_txt"></a>.</p>
                 </div>
               </section>
               <!--Contact Sec-->
@@ -201,9 +224,15 @@
                   <div class="col-sm-6">
                     <div class="social-icons-wrap float-right">
                       <!--Social Icons-->
+                      <p id="social_txt">Retrouvez moi également sur</p>
                       <ul class="social-icons float-right">
                         <li>
-                          <a href="#" class="social-icon">
+                          <a target="_blank" href="https://www.linkedin.com/in/sylvain-decombe-9486388a/" class="social-icon">
+                            <span class="fab" data-hover="&#xf08c;">&#xf08c;</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a target="_blank" href="https://github.com/sylvaindce/" class="social-icon">
                             <span class="fab" data-hover="&#xf09b;">&#xf09b;</span>
                           </a>
                         </li>
@@ -218,7 +247,7 @@
                       </a>
                     </div>
                     <div class="copywrite-wrap text-right float-right">
-                      <p class="copywrite">Developped by <b>DECOMBE Sylvain &copy; 2010.</b></p>
+                      <p class="copywrite">Developped by <b>DECOMBE Sylvain &copy; 2018.</b></p>
                     </div>
                   </div>	
                 </div>	

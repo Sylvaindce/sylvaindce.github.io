@@ -36,6 +36,7 @@ Project:	Eric
 @import url(bootstrap.min.css);
 @import url(animate.css);
 @import url(all.min.css);
+
 @font-face {
   font-family: LatoLight;
   font-weight: normal;
@@ -589,6 +590,19 @@ header.fixed {
   -webkit-transition: margin 0.6s ease 0s, transform 0.6s ease 0s;
   transition: margin 0.6s ease 0s, transform 0.6s ease 0s;
 }
+
+header.fixed::before {
+  content: "";
+  position: absolute;
+  background-color: transparent;
+  bottom: -70px;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: 1.6em;
+  border-top-right-radius: 1.6em;
+  box-shadow: 0 -1.6em 0 0 #000000;
+}
+
 header.fixed .btn {
   color: #141414;
   background: #fff;
@@ -608,6 +622,11 @@ header.fixed .btn:hover {
 
 .float-right.menu-wrap {
   display: none;
+}
+
+.lang_chooser {
+  height: 37px;
+  padding: 7px;
 }
 
 /********Vertical Nav Sec CSS********/
@@ -710,6 +729,7 @@ nav.navbar.navbar-default.vertical-nav ul li a, .vertical-nav ul li a {
 nav.navbar.navbar-default.vertical-nav ul li a span, .vertical-nav ul li a span {
   /*display:none;*/
   display: inline-block;
+  width: 130px;
 }
 nav.navbar.navbar-default.vertical-nav ul li a:hover, nav.navbar.navbar-default.vertical-nav ul li a:active, nav.navbar.navbar-default.vertical-nav ul li a:focus, .vertical-nav ul li a:hover, .vertical-nav ul li a:active, .vertical-nav ul li a:focus {
   background: none;
@@ -1285,8 +1305,8 @@ footer .available-wrap .available-pointer {
   float: left;
   -webkit-animation-name: flash;
   animation-name: flash;
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
   -webkit-animation-iteration-count: infinite;
   animation-iteration-count: infinite;
   content: " ";
@@ -1316,7 +1336,7 @@ footer .social-icons-wrap .social-icons li:last-child {
 }
 footer .social-icons-wrap .social-icons .social-icon {
   color: #141414;
-  font-size: 14px;
+  font-size: 16px;
   overflow: hidden;
   text-transform: uppercase;
   width: 25px;
@@ -1579,7 +1599,7 @@ footer .goto-top a:hover span {
   }
 
   .content-block {
-    border-radius: 0;
+    border-radius: 2rem 0 0 0;
   }
 
   .navbar-default .navbar-collapse, .navbar {
@@ -1719,6 +1739,7 @@ footer .goto-top a:hover span {
   .experience-wrap .duration {
     padding-bottom: 15px;
   }
+
 }
 @media only screen and (max-width: 736px) {
   h1 {
@@ -1730,6 +1751,11 @@ footer .goto-top a:hover span {
   header, header.fixed {
     height: 50px;
   }
+
+  header.fixed::before {
+    bottom: -50px;
+  }
+
   header .header-wrap, header.fixed .header-wrap {
     padding-top: 0;
   }
@@ -1809,6 +1835,12 @@ footer .goto-top a:hover span {
     margin-left: 17rem;
     /*width: calc(100% - 17rem);*/
   }
+
+  .lang_chooser {
+    height: 50px;
+    padding: 14px;
+  }
+
 }
 @media only screen and (max-width: 414px) {
   header.fixed .btn {
@@ -1828,6 +1860,7 @@ footer .goto-top a:hover span {
 
 .main-skills-container h4 {
   margin: 0px 0px -12px 0px;
+  padding: 0px 2.2rem 0px 2.2rem;
   position: relative;
   z-index: 2;
   background: rgba(0, 0, 0, 0) url(../images/background.svg) repeat;
@@ -1843,6 +1876,7 @@ footer .goto-top a:hover span {
   text-align: center;
   align-items: center;
   text-transform: uppercase;
+  overflow-wrap: break-word;
 }
 
 .skills-container {
@@ -1902,4 +1936,53 @@ footer .goto-top a:hover span {
 .sub-skills-container {
   background: #FFFFFF;
   padding: 26px;
+}
+
+.social-icons-wrap p {
+  width: 100%;
+  text-align: end;
+  font-size: 1em;
+  animation-name: bounce;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+#lang_list {
+  font-size: 16px;
+  font-family: "Hind", sans-serif;
+}
+
+#lang_list li, .more_about_me li {
+  width: 200px;
+  color: #141414;
+  font-family: "Hind", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+#lang_list li span {
+  color: #e91e63;
+  font-size: 12px;
+  font-weight: 500;
+  float: right;
+}
+
+.more_about_me {
+  text-align: left;
+  float: right;
+}
+
+.more_about_me li i {
+  float: right;
+  color: #e91e63;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lang_chooser p a {
+  padding: 0px 20px;
+  color: white;
 }

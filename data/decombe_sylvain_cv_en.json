@@ -2,13 +2,13 @@
     "info" : {
         "firstname" : "Sylvain",
         "lastname" : "Decombe",
-        "age" : "26 years old",
-        "address" : "75015, Paris",
-        "country" : "FRANCE",
+        "age" : "27 years old",
+        "address" : "Paris, FRANCE",
+        "driver_licence" : "Car - Motorcycle",
         "email" : "sylvain.decombe@epitech.eu",
         "picture" : "images/sylvain_decombe.jpg",
-        "short_description" : "I am Sylvain.<br/>FullStack developer.",
-        "description" : "Rocked from the earliest age by technology, I spent my free time creating websites but also to carry out the repair of computer hardware.<br/><br/>In Constant Renewal with the actual society, I stand out with my personality and by the desire to do something that corresponds to me.<br/><br/>I also have the quality of self-training driven by the desire to do all by myself."
+        "short_description" : "I am Sylvain.<br/>Software Engineer.",
+        "description" : "Cradled from the earliest age by technology, I spent my free time developing personals projects but also repairing computer hardware.<br/><br/>In constant renewal with the actual society, I stand out with my personality and my desire to realize projects that fit me.<br/><br/>I'm also confident in my self-improvement skills, driven by my curiosity, I touch and investigate everything I can."
     },
     "languages" : {
       "french" : "Mother tongue",
@@ -43,12 +43,12 @@
     ],
     "work_experience" : [
         {
-            "job_title" : "Software Engineer",
+            "job_title" : "Full Stack Software Engineer",
             "company" : "SkipperNDT",
             "location" : "Paris (FRANCE)",
             "date" : "SEP 2017 - TODAY",
             "type_of_contract" : "CDI",
-            "description" : "Software development (Python, QT, DJANGO Framework, J2E, SWING, C), Hardware prototyping, Creation and maintenance of a Cloud platform (PHP, JS, APACHE, DEBIAN), Wrote a Coding Style rules, Wrote a project that received founding from la région Ile de France, Manage third party provider for special project (specification note ...)"
+            "description" : "- Software development (Python3, Scipy, Django, Qt, Java, Swing, C, C++),<br/>- Hardware prototyping (SAMA5D2, RPi, Arduino, Buildroot),<br/>- Implementation and maintenance of a Cloud platform (PHP, JS, Apache, Debian),<br/>- Implementation of DevOps tools (Git, Docker, Trello, etc)<br/>- Wrote a Coding Style rules (LaTex),<br/>-  Wrote a project that received founding from la région Ile de France,<br/>-  Manage third party provider for special project (specification note, etc)"
         },
         {
             "job_title" : "Graphic &amp; Web Designer",
@@ -56,31 +56,31 @@
             "location" : "Shanghai (CHINA)",
             "date" : "MAR 2017 - SEP 2017",
             "type_of_contract" : "PART TIME INTERNSHIP",
-            "description" : "Create visual identity, manage the development and the design of the web site (PHP, WORDPRESS, JS) and flyers creation (Adobe CC)."
+            "description" : "- Architecture design and development of the web site (PHP, Wordpress, JS),<br/>- Create visual identity (Adobe CC),<br/>- Social media creation (Adobe CC)."
         },
         {
-            "job_title" : "Promoter",
+            "job_title" : "Events Promoter",
             "company" : "MVP events",
             "location" : "Shanghai (CHINA)",
             "date" : "FEB 2017 - SEP 2017",
             "type_of_contract" : "CDD",
-            "description" : "Create a WeChat network and promoting the nightclub's many and varied events through social media, as well as face to face promotion."
+            "description" : "- Development of a network on the WeChat platform as well as an automatic response robot (Python, Wechaty SDK),<br/>- Development of a beverage ticket lottery website (HTML, JQuery),<br/>- Promoting the nightclub's events through social media, as well as face to face promotion."
         },
         {
-            "job_title" : "Project manager - Software Engineer",
+            "job_title" : "Project manager - Full Stack Software Engineer",
             "company" : "EOBD Scan",
             "location" : "Moyvillers (FRANCE)",
             "date" : "MAR 2016 - AUG 2016",
             "type_of_contract" : "INTERNSHIP",
-            "description" : "Manage team, define goals, etablish a schedule, define the visual chart of the projects and participate to the software development. 4 project in relation of the automotive world: Two websites (PHP, JS, HTML5, CSS3), Licences manage­ment Tool Client/Server (JSP, JS, TomCat, Cron, Debian, Raspberry Pi), and a Mobile application for connected car (iOS-Swift &amp; Android-Java, OBD2)."
+            "description" : "- Team management, define the objectives and the timetable (Agile, Trello),<br/>- Define the visual chart of the projects (Adobe CC),<br/>- Software development of 4 projects related to the automotive world :<br/><br/> &ordm; Two websites (PHP, JS, HTML5, CSS3),<br/> &ordm; Customer license manage­ment Tool Client/Server side (JSP, JS, TomCat, Cron, Debian, RPi),<br/> &ordm; Mobile application for connected car (iOS-Swift &amp; Android-Java, Bluetooth, OBD2)."
         },
         {
-            "job_title" : "Software Developer - IT",
+            "job_title" : "DevOps - IT",
             "company" : "Gumi",
             "location" : "Paris (FRANCE)",
             "date" : "SEP 2015 - FEB 2015",
             "type_of_contract" : "PART TIME INTERNSHIP",
-            "description" : "Maintenance of the computer park, Creation of an internal docker server to help the deployment of the post production environment and Develo­pement of a docker client (Python, Bash) to facilitate the connexion and the deployment of post production environment."
+            "description" : "- Implementation of an internal docker server (CoreOS, Docker Engine),<br/>- Development of a client-side software to help the deployment of the post-prod environment (Python, Bash, Docker),<br/>- Computer maintenance."
         },
         {
             "job_title" : "Deliverer",
@@ -88,7 +88,7 @@
             "location" : "Paris (FRANCE)",
             "date" : "MAR 2015 - MAY 2015",
             "type_of_contract" : "CDD",
-            "description" : "Deliver breakfast every week-end."
+            "description" : "- Breakfast delivery on the weekend."
         },
         {
             "job_title" : "System Administrator Assistant - IT",
@@ -96,7 +96,7 @@
             "location" : "Paris (FRANCE)",
             "date" : "JUL 2014 - DEC 2014",
             "type_of_contract" : "INTERNSHIP",
-            "description" : "Network and server administration, User support, Maintenance of computer park, Creation of server backup for the internal intranet (RedHat Entreprise, Bash) and Participation in the Studio Video of the agency."
+            "description" : "- Implementation of a backup server of the local intranet server (Linux RedHat Entreprise, Bash, Cron),<br/>-  Network and server administration (Cross-network connection, Log review),<br/>- User support (Apple Remote Desktop, Microsoft Remote Desktop, SSH),<br/>- Computer maintenance,<br/>- Support to the Recording Studio of the Agency."
         },
         {
             "job_title" : "Graphic Designer",
@@ -104,7 +104,7 @@
             "location" : "Paris (FRANCE)",
             "date" : "OCT 2013 - APR 2014",
             "type_of_contract" : "CDI",
-            "description" : "Create visual identity, film teaser creation for events and flyers creation."
+            "description" : "- Establish clear brand identity and social media creation (Adobe CC)."
         },
         {
             "job_title" : "Consultant Sales",
@@ -112,7 +112,7 @@
             "location" : "Compiègne (FRANCE)",
             "date" : "JUL 2013 - AUG 2013",
             "type_of_contract" : "CDD",
-            "description" : "Customer reception, customer advice and merchandising."
+            "description" : "- Customer reception and customer advice,<br/>- Merchandising."
         },
         {
             "job_title" : "Stock Manager",
@@ -120,7 +120,7 @@
             "location" : "Le Meux (FRANCE)",
             "date" : "JUL 2012 - SEP 2012",
             "type_of_contract" : "INTERIM",
-            "description" : "Supply of products and quality control."
+            "description" : "- Products supply,<br/>- Quality check."
         },
         {
             "job_title" : "Warehouseman",
@@ -128,7 +128,7 @@
             "location" : "Le Meux (FRANCE)",
             "date" : "JUL 2011 - AUG 2011",
             "type_of_contract" : "INTERIM",
-            "description" : "Quality control."
+            "description" : "- Quality check."
         },
         {
             "job_title" : "Consultant Sales",
@@ -136,7 +136,7 @@
             "location" : "Compiègne (FRANCE)",
             "date" : "AUG 2010 - SEP 2010",
             "type_of_contract" : "CDD",
-            "description" : "Customer reception and customer advice."
+            "description" : "- Customer reception and customer advice."
         },
         {
             "job_title" : "Agricultural Operation",
@@ -144,7 +144,7 @@
             "location" : "Francières (FRANCE)",
             "date" : "AUG 2010 - SEP 2010",
             "type_of_contract" : "CDD",
-            "description" : "Fields maintenance."
+            "description" : "- Fields maintenance."
         },
         {
             "job_title" : "IT Technician",
@@ -152,40 +152,49 @@
             "location" : "Compiègne (FRANCE)",
             "date" : "DEC 2007 - JAN 2008",
             "type_of_contract" : "INTERNSHIP",
-            "description" : "Setting up workstations with computers and necessary peripheral devices, Checking computer hardware (HDD, RAM, CPU etc.) to ensure the effective operation, Installing and configuring appropriate software and functions according to specifications."
+            "description" : "- Workstation setup with computers and necessary peripheral devices,<br/>- Checkup of computer hardware (Hard Drive, RAM, CPU, etc) to ensure the effective operation,<br/>- Installation and configuration of appropriate software and functions according to specifications."
         }
     ],
     "skills" : {
-        "programming_language" : {
-            "C" : "75%",
-            "C++" : "80%",
-            "C#/.NET" : "50%",
-            "Java" : "90%",
-            "Python" : "90%",
-            "Bash" : "75%",
-            "Android SDK - Java" : "75%",
-            "ReactJS" : "30%",
-            "Node.JS" : "30%"
+        "programming_languages" : {
+            "C" : "3 years",
+            "C++" : "2 years",
+            "C#/.NET" : "6 months",
+            "Java" : "3 years",
+            "Python" : "6 years",
+            "Bash" : "1 years",
+            "Android SDK - Java" : "2 years",
+            "Ruby" : "2 months",
+            "Node.JS" : "8 months"
         },
-        "database" : {
-            "SQL" : "75%",
-            "Oracle Database 12c" : "60%"
+        "DevOps" : {
+            "Docker" : "2 years",
+            "Git" : "8 years",
+            "SVN" : "6 months",
+            "Jenkins" : "6 months",
+            "GitLab CI" : "2 months"
+        },
+        "Networks" : {
+            "SQL" : "3 years",
+            "Oracle Database 12c" : "1 years",
+            "TCP/IP Socket dev" : "2 years"
         },
         "web_development" : {
-            "HTML" : "90%",
-            "CSS" : "85%",
-            "PHP" : "75%",
-            "JavaScript / JQuery" : "70%",
-            "JSP" : "60%"
+            "HTML" : "8 years",
+            "CSS" : "8 years",
+            "PHP" : "4 years",
+            "[JavaScript*]" : "3 years",
+            "JSP" : "1 years"
         },
         "software" : {
-            "Adobe Creative Cloud" : "65%",
-            "Microsoft Office" : "70%",
-            "Docker" : "55%",
-            "Git" : "70%",
-            "Arduino IDE" : "60%"
+            "Adobe Creative Cloud" : "6 years",
+            "Microsoft Office" : "6 years",
+            "Arduino IDE" : "2 years",
+            "Android Studio" : "2 years",
+            "Fusion360" : "2 years",
+            "MATLAB" : "1 years"
         },
-        "operating_system" : [
+        "operating_systems" : [
             "Microsoft Windows",
             "Apple MacOS X",
             "Linux"
@@ -193,12 +202,19 @@
         "hardware_prototyping" : [
             "Arduino",
             "Raspberry Pi",
-            "Wemos"
+            "Wemos",
+            "OBD2",
+            "RF433",
+            "Buildroot",
+            "Marlin FW"
         ],
         "project_management" : [
             "Trello",
             "Scrum",
-            "Agile"
+            "Agile",
+            "Slack",
+            "MS Teams",
+            "MS SharePoint"
         ]
     }
 }
