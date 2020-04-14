@@ -50,6 +50,8 @@ function to_pdf( filename ) {
     $( ".more_about_me" ).css( "text-align", "right" );
 
     $( ".lang_chooser_txt" ).css( "visibility", "hidden" );
+
+    $( ".typed-cursor.typed-cursor--blink" ).css( "visibility", "hidden" );
    
     document.body.style.width = page_width + "px";
     width = undefined;
@@ -126,6 +128,9 @@ function to_pdf( filename ) {
         $( ".more_about_me li i" ).css( "display", "block" );
         $( ".more_about_me" ).css( "text-align", "left" );
         $( ".lang_chooser_txt" ).css( "visibility", "visible" );
+
+        $( ".typed-cursor.typed-cursor--blink" ).css( "visibility", "visible" );
+
 
         document.body.style.width = "";
     }, 6000);
