@@ -1986,3 +1986,7 @@ footer .goto-top a:hover span {
   padding: 0px 20px;
   color: white;
 }
+
+.lang_chooser p a:hover {
+  color: #e91e63;
+}
