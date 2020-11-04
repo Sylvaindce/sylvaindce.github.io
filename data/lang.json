@@ -13,7 +13,8 @@
         "contact_content_txt" : "Envoyez-moi simplement un e-mail à ",
         "download_resume_button" : "Télécharger mon CV",
         "more_txt" : "En recherche d'emploi.",
-        "social_txt" : "Retrouvez moi également sur"
+        "social_txt" : "Retrouvez moi également sur",
+        "reference_txt" : "Références"
     },
     "en" : {
         "hello_txt" : "Hi!",
@@ -29,6 +30,7 @@
         "contact_content_txt" : "Simply email me at ",
         "download_resume_button" : "Download resume",
         "more_txt" : "Looking for a job.",
-        "social_txt" : "Meet me on"
+        "social_txt" : "Meet me on",
+        "reference_txt" : "Recommandations"
     }
 }

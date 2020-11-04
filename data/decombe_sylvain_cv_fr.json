@@ -48,7 +48,7 @@
             "location" : "Paris (FRANCE)",
             "date" : "SEP 2017 - AUJOURD'HUI",
             "type_of_contract" : "CDI",
-            "description" : "- Développement logiciel (Python3, Scipy, Django, Qt, Java, Swing, C, C++),<br/>- Prototypage matériel (SAMA5D2, RPi, Arduino, Buildroot),<br/>- Implémentation et maintenance d'une plateforme Cloud (PHP, JS, Apache, Debian),<br/>- Mise en place des outils DevOps (Git, Docker, Trello, etc),<br/>- Rédaction de règles de style de codage (LaTex),<br/>- Rédaction d'un projet ayant reçu un financement par la région Ile de France,<br/>- Gestion de tiers pour des projets spécifiques (cahier des charges, etc)"
+            "description" : "Développement logiciel:<br/>- Développement logiciel (Python3, Scipy, Django, Qt, Java, Swing, C, C++),<br/>- Prototypage matériel (SAMA5D2, RPi, Arduino, Buildroot),<br/><br/>DevOps:<br/>- Implémentation et maintenance d'une plateforme Cloud (PHP, JS, Apache, Debian),<br/>- Mise en place des outils DevOps (Git, Docker, Trello, etc),<br/><br/>Maîtrise d'ouvrage:<br/>- Co-gérant du Projet Skipper Drone,<br/>- Rédaction de règles de style de codage (LaTex),<br/>- Rédaction d'un projet ayant reçu un financement par la région Ile de France,<br/>- Gestion de tiers pour des projets spécifiques (cahier des charges, etc)"
         },
         {
             "job_title" : "Designer graphique et Développeur Web",
@@ -216,5 +216,8 @@
             "MS Teams",
             "MS SharePoint"
         ]
+    },
+    "reference" : {
+            "Challenges N°651" : "data/Challenges651_SkipperNDT.pdf"
     }
 }

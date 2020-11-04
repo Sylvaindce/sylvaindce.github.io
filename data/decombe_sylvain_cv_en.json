@@ -216,5 +216,8 @@
             "MS Teams",
             "MS SharePoint"
         ]
+    },
+    "reference" : {
+        "Challenges N°651" : "data/Challenges651_SkipperNDT.pdf"
     }
 }

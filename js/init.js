@@ -205,6 +205,12 @@ function load_data_from_json( lang ) {
       skills_items.push("</div></div>");
     });
     $("#skills_container").append(skills_items.join( "" ));
+  
+    // REFERENCES
+    $.each( data.reference , function( key, val ) {
+        $( "#reference_list" ).append(`<li><a href="${val}">${key.capitalize()}</a></li>`);
+    });
+  
   });
 }
 

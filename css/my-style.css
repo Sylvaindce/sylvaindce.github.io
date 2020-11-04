@@ -552,6 +552,11 @@ p {
   padding-top: 7px;
 }
 
+#reference_list li a{
+  color: #42A5F5;
+  font-family: Lato;
+}
+
 header {
   position: absolute;
   right: 0;
@@ -600,7 +605,7 @@ header.fixed::before {
   width: 100%;
   border-top-left-radius: 1.6em;
   border-top-right-radius: 1.6em;
-  box-shadow: 0 -1.6em 0 0 #000000;
+  box-shadow: 0 -1.6em 0 0 #141414;
 }
 
 header.fixed .btn {
