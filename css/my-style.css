@@ -436,7 +436,7 @@ p {
 }
 /********Body Sec CSS********/
 .background {
-  background: rgba(0, 0, 0, 0) url("../images/background.svg") no-repeat;
+  background: rgba(0, 0, 0, 0) url("/images/background.svg") no-repeat;
   image-rendering: optimizeQuality;
   height: 100%;
   width: 100%;
