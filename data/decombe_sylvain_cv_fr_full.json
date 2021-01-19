@@ -83,12 +83,76 @@
             "description" : "- Implémentation d'un serveur local Docker (CoreOS, Docker Engine),<br/>- Développement d'un logiciel client (Python, Bash, Docker) pour faciliter la connexion et le déploiement d'un environnement de post-production,<br/>- Maintenance du parc informatique."
         },
         {
+            "job_title" : "Livreur",
+            "company" : "Deliver.ee",
+            "location" : "Paris (FRANCE)",
+            "date" : "MAR 2015 - MAI 2015",
+            "type_of_contract" : "CDD",
+            "description" : "- Livraison de petit-déjeuner le week-end."
+        },
+        {
             "job_title" : "Assistant administrateur système - IT",
             "company" : "Burson Marsteller",
             "location" : "Paris (FRANCE)",
             "date" : "JUIL 2014 - DEC 2014",
             "type_of_contract" : "STAGE",
             "description" : "- Implémentation d'un serveur de sauvegarde pour l'intranet (Linux RedHat Entreprise, Cron, Bash),<br/>- Administration réseau et serveur (Brassage switch, Analyse des logs, etc),<br/>- Support utilisateurs (Apple Remote Desktop, Microsoft Remote Desktop, SSH),<br/>- Maintenance du parc informatique,<br/>- Participation au Studio Vidéo de l'agence."
+        },
+        {
+            "job_title" : "Designer graphique",
+            "company" : "Anarchic",
+            "location" : "Paris (FRANCE)",
+            "date" : "OCT 2013 - AVR 2014",
+            "type_of_contract" : "CDI",
+            "description" : "- Création d'une identité visuelle et de differents supports de promotion (dépliants et vidéos) pour les événements (Adobe CC)."
+        },
+        {
+            "job_title" : "Conseiller de Vente",
+            "company" : "Intersport",
+            "location" : "Compiègne (FRANCE)",
+            "date" : "JUIL 2013 - AUG 2013",
+            "type_of_contract" : "CDD",
+            "description" : "- Accueil et Conseil clientèle,<br/>-  Merchandising."
+        },
+        {
+            "job_title" : "Gestionnaire de stock",
+            "company" : "Chanel",
+            "location" : "Le Meux (FRANCE)",
+            "date" : "JUIL 2012 - SEP 2012",
+            "type_of_contract" : "INTERIM",
+            "description" : "- Approvisionnement des produits pour la chaine de distribution,<br/>- Contrôle de qualité."
+        },
+        {
+            "job_title" : "Manutentionnaire",
+            "company" : "Chanel",
+            "location" : "Le Meux (FRANCE)",
+            "date" : "JUIL 2011 - AOUT 2011",
+            "type_of_contract" : "INTERIM",
+            "description" : "- Contrôle de qualité."
+        },
+        {
+            "job_title" : "Conseiller de Vente",
+            "company" : "Intersport",
+            "location" : "Compiègne (FRANCE)",
+            "date" : "AOUT 2010 - SEP 2010",
+            "type_of_contract" : "CDD",
+            "description" : "- Accueil et Conseil clientèle"
+        },
+        {
+            "job_title" : "Exploitant agricole",
+            "company" : "Société Agricole de Francières",
+            "location" : "Francières (FRANCE)",
+            "date" : "AOUT 2010 - SEP 2010",
+            "type_of_contract" : "CDD",
+            "description" : "- Maintenance des champs."
+        },
+        {
+            "job_title" : "IT",
+            "company" : "Microcom",
+            "location" : "Compiègne (FRANCE)",
+            "date" : "DEC 2007 - JAN 2008",
+            "type_of_contract" : "STAGE",
+            "description" : "- Montage d'ordinateur sur mesure,<br/>- Vérification du matériel (Disque dur, RAM, Processeur, etc) par test de fatigue pour en garantir le bon fonctionnement,<br/>- Installation et configuration logiciel appropriés conformément aux spécifications clients."
         }
     ],
     "skills" : {

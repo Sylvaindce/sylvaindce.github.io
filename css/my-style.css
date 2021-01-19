@@ -95,18 +95,18 @@ ul {
 }
 
 a {
-  color: #fff;
+  color: #e91e63;
   text-decoration: none;
 }
 
 a:hover {
-  color: #fff;
-  text-decoration: none;
+  color: #e91e63;
+  text-decoration: underline;
 }
 
 a:focus {
-  color: #fff;
-  text-decoration: none;
+  color: #e91e63;
+  text-decoration: underline;
   outline: none;
 }
 

@@ -83,12 +83,76 @@
             "description" : "- Implementation of an internal docker server (CoreOS, Docker Engine),<br/>- Development of a client-side software to help the deployment of the post-prod environment (Python, Bash, Docker),<br/>- Computer maintenance."
         },
         {
+            "job_title" : "Deliverer",
+            "company" : "Deliver.ee",
+            "location" : "Paris (FRANCE)",
+            "date" : "MAR 2015 - MAY 2015",
+            "type_of_contract" : "CDD",
+            "description" : "- Breakfast delivery on the weekend."
+        },
+        {
             "job_title" : "System Administrator Assistant - IT",
             "company" : "Burson Marsteller",
             "location" : "Paris (FRANCE)",
             "date" : "JUL 2014 - DEC 2014",
             "type_of_contract" : "INTERNSHIP",
             "description" : "- Implementation of a backup server of the local intranet server (Linux RedHat Entreprise, Bash, Cron),<br/>-  Network and server administration (Cross-network connection, Log review),<br/>- User support (Apple Remote Desktop, Microsoft Remote Desktop, SSH),<br/>- Computer maintenance,<br/>- Support to the Recording Studio of the Agency."
+        },
+        {
+            "job_title" : "Graphic Designer",
+            "company" : "Anarchic",
+            "location" : "Paris (FRANCE)",
+            "date" : "OCT 2013 - APR 2014",
+            "type_of_contract" : "CDI",
+            "description" : "- Establish clear brand identity and social media creation (Adobe CC)."
+        },
+        {
+            "job_title" : "Consultant Sales",
+            "company" : "Intersport",
+            "location" : "Compiègne (FRANCE)",
+            "date" : "JUL 2013 - AUG 2013",
+            "type_of_contract" : "CDD",
+            "description" : "- Customer reception and customer advice,<br/>- Merchandising."
+        },
+        {
+            "job_title" : "Stock Manager",
+            "company" : "Chanel",
+            "location" : "Le Meux (FRANCE)",
+            "date" : "JUL 2012 - SEP 2012",
+            "type_of_contract" : "INTERIM",
+            "description" : "- Products supply,<br/>- Quality check."
+        },
+        {
+            "job_title" : "Warehouseman",
+            "company" : "Chanel",
+            "location" : "Le Meux (FRANCE)",
+            "date" : "JUL 2011 - AUG 2011",
+            "type_of_contract" : "INTERIM",
+            "description" : "- Quality check."
+        },
+        {
+            "job_title" : "Consultant Sales",
+            "company" : "Intersport",
+            "location" : "Compiègne (FRANCE)",
+            "date" : "AUG 2010 - SEP 2010",
+            "type_of_contract" : "CDD",
+            "description" : "- Customer reception and customer advice."
+        },
+        {
+            "job_title" : "Agricultural Operation",
+            "company" : "Société Agricole de Francières",
+            "location" : "Francières (FRANCE)",
+            "date" : "AUG 2010 - SEP 2010",
+            "type_of_contract" : "CDD",
+            "description" : "- Fields maintenance."
+        },
+        {
+            "job_title" : "IT Technician",
+            "company" : "Microcom",
+            "location" : "Compiègne (FRANCE)",
+            "date" : "DEC 2007 - JAN 2008",
+            "type_of_contract" : "INTERNSHIP",
+            "description" : "- Workstation setup with computers and necessary peripheral devices,<br/>- Checkup of computer hardware (Hard Drive, RAM, CPU, etc) to ensure the effective operation,<br/>- Installation and configuration of appropriate software and functions according to specifications."
         }
     ],
     "skills" : {
