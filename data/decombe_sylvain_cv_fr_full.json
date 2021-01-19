@@ -6,7 +6,7 @@
         "address" : "Paris, FRANCE",
         "driver_licence" : "Permis A - B",
         "email" : "sylvain.decombe@epitech.eu",
-        "picture" : "images/sylvain_decombe.png",
+        "picture" : "images/sylvain_decombe.jpg",
         "short_description" : "Je suis Sylvain.<br/>Ingénieur logiciel.",
         "description" : "Bercé dès le plus jeune âge par les nouvelles technologies, je passe mon temps libre à programmer des projets personnels mais également à effectuer des réparations de matériel informatique.<br/><br/>En constant apprentissage pour répondre aux enjeux et innovations de la société actuelle, je pense me démarquer par ma personnalité et mon envie de réaliser des projets qui me correspondent réellement.<br/><br/>Je suis assez confiant en ma capacité d'auto-formation, poussé par ma curiosité et mon désir de faire par mes propres moyens."
     },
