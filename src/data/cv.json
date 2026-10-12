@@ -1,0 +1,477 @@
+{
+  "personalInfo": {
+    "lastName": "Decombe",
+    "firstName": "Sylvain",
+    "address": "Paris, FRANCE",
+    "email": "sylvain.decombe@epitech.eu",
+    "picture": "images/sylvain_decombe.jpg",
+    "birthYear": 1993,
+    "openToWork": true,
+    "driverLicence": {
+      "en": "Car - Motorcycle",
+      "fr": "Permis A - B"
+    },
+    "shortDescription": {
+      "en": "I am Sylvain.<br/>Software Engineer.",
+      "fr": "Je suis Sylvain.<br/>Ingénieur logiciel."
+    },
+    "description": {
+      "en": "Cradled from the earliest age by technology, I spent my free time developing personals projects but also repairing computer hardware.<br/><br/>In constant renewal with the actual society, I stand out with my personality and my desire to realize projects that fit me.<br/><br/>I'm also confident in my self-improvement skills, driven by my curiosity, I touch and investigate everything I can.",
+      "fr": "Bercé dès le plus jeune âge par les nouvelles technologies, je passe mon temps libre à programmer des projets personnels mais également à effectuer des réparations de matériel informatique.<br/><br/>En constant apprentissage pour répondre aux enjeux et innovations de la société actuelle, je pense me démarquer par ma personnalité et mon envie de réaliser des projets qui me correspondent réellement.<br/><br/>Je suis assez confiant en ma capacité d'auto-formation, poussé par ma curiosité et mon désir de faire par mes propres moyens."
+    }
+  },
+  "languages": [
+    {
+      "name": {
+        "en": "french",
+        "fr": "français"
+      },
+      "level": {
+        "en": "Mother tongue",
+        "fr": "Langue maternelle"
+      }
+    },
+    {
+      "name": {
+        "en": "english",
+        "fr": "anglais"
+      },
+      "level": {
+        "en": "Fluent",
+        "fr": "Courant"
+      }
+    },
+    {
+      "name": {
+        "en": "spanish",
+        "fr": "espagnol"
+      },
+      "level": {
+        "en": "Intermediate level",
+        "fr": "Intermédiaire"
+      }
+    }
+  ],
+  "interests": [
+    {
+      "name": {
+        "en": "music",
+        "fr": "musique"
+      },
+      "icon": "fa-headphones"
+    },
+    {
+      "name": {
+        "en": "motorcycle",
+        "fr": "moto"
+      },
+      "icon": "fa-motorcycle"
+    },
+    {
+      "name": "design",
+      "icon": "fa-paint-brush"
+    },
+    {
+      "name": {
+        "en": "video-game",
+        "fr": "jeux vidéo"
+      },
+      "icon": "fa-gamepad"
+    },
+    {
+      "name": {
+        "en": "3D printing",
+        "fr": "impression 3D"
+      },
+      "icon": "fa-cube"
+    }
+  ],
+  "workExperience": [
+    {
+      "position": "Tech Lead Full Stack",
+      "company": "SkipperNDT",
+      "location": "Paris (FRANCE)",
+      "period": {
+        "en": "SEP 2017 - TODAY",
+        "fr": "SEP 2017 - AUJOURD'HUI"
+      },
+      "contractType": "CDI",
+      "description": {
+        "en": "Web development:<br/>- SaaS platform for data rendering (Python3, Django Framework, PostgreSQL, Bootstrap, JQuery, Synology REST API),<br/>- Implementation and maintenance of a Cloud platform: NextCloud (PHP, JS, Apache, Debian)<br/><br/>Desktop development:<br/>- Internal database management software (Java, Swing, MySQL),<br/>- Data mining software (Python3, Qt, Scipy, Numpy, MatPlotlib, Pandas)<br/><br/>Mobile development:<br/>- Mobile app for drone states monitoring (React Native, Swift, ZMQ, TCP / IP)<br/><br/>DevOps:<br/>- Implementation of a DevOps toolchain (Git, Docker, GitLab CI / CD, Pytest, Sphinx, etc),<br/>- Deployment of our Web services through Docker on our local server, remote access through VPN tunnels (Docker Compose, DockerFile, Ngrok, OVH)<br/><br/>Electronic:<br/>- Magnetic measurement device with laser positioning (C, Wemos D1 mini, RS232, Laser cutting),<br/>- Infrared temperature / magnetic measurement device (Python3, RPi, RS232, 3D printing),<br/>- Hybrid firmware embedded on Cortex A5 basis (SAMA5D2, Buildroot, C ++, Python3, ALSALib, ZMQ)<br/><br/>Project management:<br/>- Co-manager of the Skipper Drone Project,<br/>- Redaction of coding style rules (LaTex),<br/>- Drafting a project that received funding from the Ile de France region,<br/>- Third-party management for specific projects (Gantt, specification note, etc)",
+        "fr": "Développement Web:<br/>- Application SaaS de rendu de données d'inspection pour les clients (Python3, Django Framework, PostgreSQL, Bootstrap, JQuery, Synology REST API),<br/>- Implémentation et maintenance d'une plateforme Cloud:NextCloud (PHP, JS, Apache, Debian)<br/><br/>Développement bureau:<br/>- Logiciel de gestion de base de données interne (Java, Swing, MySQL),<br/>- Logiciel de data mining (Python3, Qt, Scipy, Numpy, MatPlotlib, Pandas)<br/><br/>Développement mobile:<br/>- Client mobile de supervision d'états du drone (React Native, Swift, ZMQ, TCP/IP)<br/><br/>DevOps:<br/>- Mise en place d'une chaine d'outils DevOps (Git, Docker, GitLab CI/CD, pytest, Sphinx, etc),<br/>- Déploiement des services WEB sous forme de Docker sur notre serveur local accessible en externe via tunnels VPN (Docker Compose, DockerFile, Ngrok, OVH)<br/><br/>Electronique:<br/>- Appareil de mesure magnétique avec positionnement laser (C, Wemos D1 mini, RS232, Découpe laser),<br/>- Appareil de mesure de temperature infrarouge / magnétique (Python3, RPi, RS232, Impression 3D),<br/>- Firmware hybride embarqué sur base Cortex A5 (SAMA5D2, Buildroot, C++, Python3, ALSALib, ZMQ)<br/><br/>Maîtrise d'ouvrage:<br/>- Co-gérant du Projet Skipper Drone,<br/>- Rédaction de règles de style de codage (LaTex),<br/>- Rédaction d'un projet ayant reçu un financement par la région Ile de France,<br/>- Gestion de tiers pour des projets spécifiques (Gantt, cahier des charges, etc)"
+      }
+    },
+    {
+      "position": {
+        "en": "Graphic & Web Designer",
+        "fr": "Designer graphique et Développeur Web"
+      },
+      "company": "Bold&Hill",
+      "location": {
+        "en": "Shanghai (CHINA)",
+        "fr": "Shanghai (CHINE)"
+      },
+      "period": "MAR 2017 - SEP 2017",
+      "contractType": {
+        "en": "PART TIME INTERNSHIP",
+        "fr": "STAGE (TEMPS PARTIEL)"
+      },
+      "description": {
+        "en": "Web development:<br/>- Architecture design and development of the english and spanish web site (PHP, Wordpress, JS, MySQL)<br/><br/>CAD/DTP:<br/>- Create visual identity (Adobe CC),<br/>- Social media creation (Adobe CC).",
+        "fr": "Développement Web:<br/>- Architecture et développement du site web anglais et espagnol (PHP, Wordpress, JS, MySQL)<br/><br/>CAO/PAO:<br/>- Création d'une identité visuelle (Adobe CC),<br/>- Création de dépliants (Adobe CC)"
+      }
+    },
+    {
+      "position": {
+        "en": "Events Promoter",
+        "fr": "Promoteur d'événements"
+      },
+      "company": "MVP events",
+      "location": {
+        "en": "Shanghai (CHINA)",
+        "fr": "Shanghai (CHINE)"
+      },
+      "period": {
+        "en": "FEB 2017 - SEP 2017",
+        "fr": "FEV 2017 - SEP 2017"
+      },
+      "contractType": "CDD",
+      "description": {
+        "en": "Web development:<br/>- Development of a network on the WeChat platform as well as an automatic response robot (Python3, Wechaty SDK, Docker),<br/>- Development of a beverage ticket lottery website (PHP, JS, XML)<br/><br/>Marketing/Communication:<br/>- Promoting the nightclub's events through social media,<br/>- Customer acquisition.",
+        "fr": "Développement Web:<br/>- Développement d'un réseau sur la plateforme WeChat ainsi que d'un robot de réponse automatique (Python3, Wechaty SDK, Docker),<br/>- <a href='https://github.com/Sylvaindce/parisbynight_promotion'>Site web</a> de loterie de tickets boissons (PHP, JS, XML)<br/><br/>Marketing/Communication:<br/>- Promotion de nombreux événements via les réseaux sociaux,<br/>- Fidélisation clients."
+      }
+    },
+    {
+      "position": {
+        "en": "Project manager - Full Stack Software Engineer",
+        "fr": "Chef de Projet - Développeur logiciel Full Stack"
+      },
+      "company": "EOBD Scan",
+      "location": "Moyvillers (FRANCE)",
+      "period": {
+        "en": "MAR 2016 - AUG 2016",
+        "fr": "MAR 2016 - AOUT 2016"
+      },
+      "contractType": {
+        "en": "INTERNSHIP",
+        "fr": "STAGE"
+      },
+      "description": {
+        "en": "Web development:<br/>- Car sales online store (PHP, JS, HTML5, CSS3, MySQL),<br/>- Showcase site, introduction of company services (HTML5, CSS3), Customer license manage­ment Tool Client/Server side (JSP, JS, TomCat, Cron, Debian, RPi)<br/><br/>Mobile development:<br/>- Mobile application (iOS / Android) for connected cars (Swift, Java, Bluetooth, OBD2)<br/><br/>Project management:- Team management (Agile),<br/>- Definition of objectives and schedule (Gantt, Trello)<br/><br/>CAD/DTP:<br/>- Definition of the visual guidelines of the projects (Adobe CC)",
+        "fr": "Développement Web:<br/>- Site web de vente de voitures neuves sur catalogue (PHP, JS, HTML5, CSS3, MySQL),<br/>- Site vitrine, présentation des services de l'entreprise (HTML5, CSS3),<br/>- Outil de gestion des licences clients (JSP, JS, TomCat, Cron, Debian, RPi)<br/><br/>Développement mobile:<br/>- Application mobile (iOS/Android) pour voiture connectée (Swift, Java, Bluetooth, OBD2)<br/><br/>Maîtrise d'ouvrage:<br/>- Gestion d'équipe (Agile),<br/>- Définition des objectifs et du calendrier (Gantt, Trello)<br/><br/>CAO/PAO:<br/>- Définition de la charte visuelle des projets (Adobe CC)"
+      }
+    },
+    {
+      "position": "DevOps - IT",
+      "company": "Gumi",
+      "location": "Paris (FRANCE)",
+      "period": {
+        "en": "SEP 2015 - FEB 2015",
+        "fr": "SEP 2015 - FEV 2015"
+      },
+      "contractType": {
+        "en": "PART TIME INTERNSHIP",
+        "fr": "STAGE (TEMPS PARTIEL)"
+      },
+      "description": {
+        "en": "- Implementation of an internal docker server (CoreOS, Docker Engine),<br/>- Development of a client-side software to help the deployment of the post-prod environment (Python, Bash, Docker),<br/>- Computer maintenance.",
+        "fr": "- Implémentation d'un serveur local Docker (CoreOS, Docker Engine),<br/>- Développement d'un logiciel client (Python, Bash, Docker) pour faciliter la connexion et le déploiement d'un environnement de post-production,<br/>- Maintenance du parc informatique."
+      }
+    },
+    {
+      "position": {
+        "en": "System Administrator Assistant - IT",
+        "fr": "Assistant administrateur système - IT"
+      },
+      "company": "Burson Marsteller",
+      "location": "Paris (FRANCE)",
+      "period": {
+        "en": "JUL 2014 - DEC 2014",
+        "fr": "JUIL 2014 - DEC 2014"
+      },
+      "contractType": {
+        "en": "INTERNSHIP",
+        "fr": "STAGE"
+      },
+      "description": {
+        "en": "- Implementation of a backup server of the local intranet server (Linux RedHat Entreprise, Bash, Cron),<br/>-  Network and server administration (Cross-network connection, Log review),<br/>- User support (Apple Remote Desktop, Microsoft Remote Desktop, SSH),<br/>- Computer maintenance,<br/>- Support to the Recording Studio of the Agency.",
+        "fr": "- Implémentation d'un serveur de sauvegarde pour l'intranet (Linux RedHat Entreprise, Cron, Bash),<br/>- Administration réseau et serveur (Brassage switch, Analyse des logs, etc),<br/>- Support utilisateurs (Apple Remote Desktop, Microsoft Remote Desktop, SSH),<br/>- Maintenance du parc informatique,<br/>- Participation au Studio Vidéo de l'agence."
+      }
+    }
+  ],
+  "education": [
+    {
+      "degree": {
+        "en": "Master Degree in Software Engineering",
+        "fr": "Master en Génie logiciel"
+      },
+      "institution": "Tongji University",
+      "location": {
+        "en": "Shanghai (China)",
+        "fr": "Shanghai (Chine)"
+      },
+      "period": {
+        "en": "SEP 2016 - SEP 2019",
+        "fr": "SEP 2016 - SEP 2019"
+      }
+    },
+    {
+      "degree": {
+        "en": "Epitech Graduate Diploma in Information Technology",
+        "fr": "Master Epitech, Expert en Technologie de l'information"
+      },
+      "institution": "Epitech, Graduate School of Digital Innovation",
+      "location": "Paris (France)",
+      "period": "SEP 2015 - SEP 2018"
+    },
+    {
+      "degree": {
+        "en": "A-Level with specialization in Sciences",
+        "fr": "Baccalauréat section Scientifique"
+      },
+      "institution": "Lycée Pierre D'ailly",
+      "location": "Compiègne (France)",
+      "period": {
+        "en": "SEP 2012 - JUL 2013",
+        "fr": "SEP 2012 - JUIL 2013"
+      }
+    }
+  ],
+  "skills": [
+    {
+      "category": {
+        "en": "Programming languages",
+        "fr": "Langages de programmation"
+      },
+      "items": [
+        {
+          "name": "C",
+          "duration": 36
+        },
+        {
+          "name": "C++",
+          "duration": 24
+        },
+        {
+          "name": "C#/.NET",
+          "duration": 6
+        },
+        {
+          "name": "Java",
+          "duration": 36
+        },
+        {
+          "name": "Python",
+          "duration": 72
+        },
+        {
+          "name": "Bash",
+          "duration": 12
+        },
+        {
+          "name": "Android SDK - Java",
+          "duration": 24
+        },
+        {
+          "name": "Ruby",
+          "duration": 2
+        },
+        {
+          "name": "Node.JS",
+          "duration": 8
+        }
+      ]
+    },
+    {
+      "category": "DevOps",
+      "items": [
+        {
+          "name": "Docker",
+          "duration": 24
+        },
+        {
+          "name": "Git",
+          "duration": 96
+        },
+        {
+          "name": "SVN",
+          "duration": 6
+        },
+        {
+          "name": "Jenkins",
+          "duration": 6
+        },
+        {
+          "name": "GitLab CI",
+          "duration": 2
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "Networks",
+        "fr": "Réseaux"
+      },
+      "items": [
+        {
+          "name": "SQL",
+          "duration": 36
+        },
+        {
+          "name": "Oracle Database 12c",
+          "duration": 12
+        },
+        {
+          "name": "TCP/IP Socket dev",
+          "duration": 24
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "Web development",
+        "fr": "Développement web"
+      },
+      "items": [
+        {
+          "name": "HTML",
+          "duration": 96
+        },
+        {
+          "name": "CSS",
+          "duration": 96
+        },
+        {
+          "name": "PHP",
+          "duration": 48
+        },
+        {
+          "name": "[JavaScript*]",
+          "duration": 36
+        },
+        {
+          "name": "JSP",
+          "duration": 12
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "Software",
+        "fr": "Logiciels"
+      },
+      "items": [
+        {
+          "name": "Adobe Creative Cloud",
+          "duration": 72
+        },
+        {
+          "name": "Microsoft Office",
+          "duration": 72
+        },
+        {
+          "name": "Arduino IDE",
+          "duration": 24
+        },
+        {
+          "name": "Android Studio",
+          "duration": 24
+        },
+        {
+          "name": "Fusion360",
+          "duration": 24
+        },
+        {
+          "name": "MATLAB",
+          "duration": 12
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "Operating systems",
+        "fr": "Systèmes d'exploitation"
+      },
+      "items": [
+        {
+          "name": "Microsoft Windows"
+        },
+        {
+          "name": "Apple MacOS X"
+        },
+        {
+          "name": "Linux"
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "Hardware prototyping",
+        "fr": "Prototypage matériel"
+      },
+      "items": [
+        {
+          "name": "Arduino"
+        },
+        {
+          "name": "Raspberry Pi"
+        },
+        {
+          "name": "Wemos"
+        },
+        {
+          "name": "OBD2"
+        },
+        {
+          "name": "RF433"
+        },
+        {
+          "name": "Buildroot"
+        },
+        {
+          "name": "Marlin FW"
+        }
+      ]
+    },
+    {
+      "category": {
+        "en": "Project management",
+        "fr": "Gestion de projet"
+      },
+      "items": [
+        {
+          "name": "Trello"
+        },
+        {
+          "name": "Scrum"
+        },
+        {
+          "name": "Agile"
+        },
+        {
+          "name": "Slack"
+        },
+        {
+          "name": "MS Teams"
+        },
+        {
+          "name": "MS SharePoint"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Challenges N°651",
+      "url": "Challenges651_SkipperNDT.pdf"
+    },
+    {
+      "name": "Brevet Cartographie par Drone",
+      "url": "WO2023148057A1.pdf"
+    },
+    {
+      "name": "GitHub: Sylvaindce",
+      "url": "https://github.com/sylvaindce/"
+    }
+  ]
+}
